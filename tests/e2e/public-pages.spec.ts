@@ -198,7 +198,7 @@ test('contact page publishes official channels and completes a website enquiry',
   await expect(
     page.locator('.contact-application__social').getByRole('link', { name: /Facebook/ })
   ).toHaveAttribute('href', 'https://www.facebook.com/gbeaward/');
-  await expect(page.locator('.contact-application__details')).toContainText('28 August 2026');
+  await expect(page.locator('.contact-application__details')).toContainText('2026');
   await expect(page.getByRole('link', { name: /Confirm on WhatsApp/ }).first()).toHaveAttribute(
     'href',
     'https://wa.link/4f21fy'

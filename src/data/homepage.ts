@@ -13,7 +13,7 @@ import { programmeDetails, siteNavigation } from './site';
 export const homepageContent = {
   seo: {
     title: 'Best Website Awards Sri Lanka 2026 | Global Recognition',
-    description: `Entries are open for Best Website Awards Sri Lanka 2026 on ${programmeDetails.date}, recognising outstanding websites across design, experience, accessibility and impact.`
+    description: `Entries are open for Best Website Awards Sri Lanka ${programmeDetails.date}, recognising outstanding websites across design, experience, accessibility and impact.`
   },
   navigation: siteNavigation,
   hero: {
@@ -49,7 +49,7 @@ export const homepageContent = {
     title: 'A standard for meaningful digital work.',
     statements: [
       'Best Website Awards connects Sri Lanka’s digital excellence with global recognition while welcoming work from every market.',
-      `${programmeDetails.status} for the official programme date of ${programmeDetails.date}.`
+      `${programmeDetails.status} for the ${programmeDetails.date} programme.`
     ]
   },
   work: {

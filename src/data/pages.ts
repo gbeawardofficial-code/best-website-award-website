@@ -20,7 +20,7 @@ export const editorialPages = {
     slug: 'awards',
     seo: {
       title: 'Best Website Awards 2026 | Global Website Recognition',
-      description: `Apply to Best Website Awards 2026 for the ${programmeDetails.date} programme and discover the evidence-led standard for purposeful, accessible and effective websites.`
+      description: `Apply to Best Website Awards ${programmeDetails.date} and discover the evidence-led standard for purposeful, accessible and effective websites.`
     },
     hero: {
       title: 'Recognition built on the work.',
@@ -368,7 +368,7 @@ export const editorialPages = {
     slug: 'process',
     seo: {
       title: 'Best Website Awards 2026 Review Process | BWA',
-      description: `Follow the Best Website Awards 2026 application and review process for ${programmeDetails.date}, from presenting a live website to evidence-led consideration.`
+      description: `Follow the Best Website Awards ${programmeDetails.date} application and review process, from presenting a live website to evidence-led consideration.`
     },
     hero: {
       title: 'Make the work understandable.',
@@ -585,7 +585,7 @@ export const utilityPages = {
     slug: 'contact',
     seo: {
       title: 'Apply Now | Best Website Awards 2026',
-      description: `Apply now for Best Website Awards 2026 on ${programmeDetails.date}, confirm eligibility, present a live website or contact the official team about the entry fee.`,
+      description: `Apply now for Best Website Awards ${programmeDetails.date}, confirm eligibility, present a live website or contact the official team about the entry fee.`,
       pageType: 'ContactPage'
     },
     title: 'Present your website for 2026.',
@@ -595,7 +595,7 @@ export const utilityPages = {
       {
         title: 'What happens next',
         body: [
-          `Applications are open for the official programme date of ${programmeDetails.date}. The awards team reviews the website address, organisation and context you provide, then responds by email with the next step.`,
+          `Applications are open for the ${programmeDetails.date} programme. The awards team reviews the website address, organisation and context you provide, then responds by email with the next step.`,
           'Eligible work must be a live, functional website presented by its owner or an authorised contributor. New websites and substantial redesigns from any country may be considered.'
         ]
       },
@@ -613,7 +613,7 @@ export const utilityPages = {
     slug: 'faq',
     seo: {
       title: 'Best Website Awards 2026 FAQs | Eligibility & Criteria',
-      description: `Find confirmed Best Website Awards Sri Lanka 2026 details for ${programmeDetails.date}, including eligibility, website types, criteria, evidence, entry fee and review.`,
+      description: `Find confirmed Best Website Awards Sri Lanka ${programmeDetails.date} details, including eligibility, website types, criteria, evidence, entry fee and review.`,
       pageType: 'FAQPage'
     },
     title: 'Questions, answered with clarity.',
@@ -772,9 +772,9 @@ export const utilityPages = {
         ]
       },
       {
-        title: 'What are the confirmed 2026 date, fee and entry instructions?',
+        title: 'What are the confirmed 2026 fee and entry instructions?',
         body: [
-          `${programmeDetails.status}. The official programme date is ${programmeDetails.date}. Begin by using Apply now and sending the live website address, organisation, contact details and a concise account of its purpose and contributors.`,
+          `${programmeDetails.status} for Best Website Awards ${programmeDetails.date}. Begin by using Apply now and sending the live website address, organisation, contact details and a concise account of its purpose and contributors.`,
           `${programmeDetails.feeGuidance} Information from third-party listings should be checked against this website or an official Global Business Excellence Awards channel.`
         ]
       },
@@ -849,7 +849,7 @@ export const utilityPages = {
     slug: 'terms',
     seo: {
       title: 'Best Website Awards 2026 Terms & Entry Information',
-      description: `Read confirmed Best Website Awards 2026 entry information for ${programmeDetails.date}, including eligibility, fee confirmation, website use and intellectual property terms.`
+      description: `Read confirmed Best Website Awards ${programmeDetails.date} entry information, including eligibility, fee confirmation, website use and intellectual property terms.`
     },
     title: 'Terms built for clarity.',
     introduction:
@@ -858,7 +858,7 @@ export const utilityPages = {
       {
         title: 'Public information',
         body: [
-          `${programmeDetails.status} for Best Website Awards 2026. The official programme date is ${programmeDetails.date}.`,
+          `${programmeDetails.status} for Best Website Awards ${programmeDetails.date}.`,
           `Eligible entries are live, functional websites presented by their owner or an authorised contributor. New websites and substantial redesigns from any country may be considered. ${programmeDetails.feeGuidance}`
         ]
       },

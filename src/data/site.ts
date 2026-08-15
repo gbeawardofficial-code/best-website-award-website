@@ -44,7 +44,7 @@ export const contactDetails = {
 
 export const programmeDetails = {
   status: 'Entries now open',
-  date: '28 August 2026',
+  date: '2026',
   whatsappHref: 'https://wa.link/4f21fy',
   feeGuidance: 'Confirm the applicable entry fee directly with the awards team on WhatsApp.'
 } as const;

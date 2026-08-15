@@ -145,7 +145,7 @@ describe('public page content contract', () => {
     const copy = JSON.stringify({ homepageDate: programmeDetails, editorialPages, utilityPages });
 
     expect(programmeDetails.status).toBe('Entries now open');
-    expect(programmeDetails.date).toBe('28 August 2026');
+    expect(programmeDetails.date).toBe('2026');
     expect(programmeDetails.whatsappHref).toBe('https://wa.link/4f21fy');
     expect(copy).toContain('live, functional website');
     expect(copy).not.toMatch(
