@@ -405,7 +405,15 @@
   }
 
   .site-header__brand {
-    width: clamp(12rem, 16vw, 15.2rem);
+    display: inline-flex;
+    width: auto;
+    height: min(4.1rem, calc(var(--header-height) - 1.9rem));
+  }
+
+  .site-header__logo {
+    height: 100%;
+    width: auto;
+    display: block;
   }
 
   .site-header__nav {
@@ -1653,10 +1661,6 @@
       gap: 1.25rem;
     }
 
-    .site-header__brand {
-      width: 11.5rem;
-    }
-
     .site-header__nav {
       gap: 1rem;
     }
@@ -1855,10 +1859,6 @@
 
     .hero h1 {
       font-size: clamp(2.1rem, 10.2vw, 3.9rem);
-    }
-
-    .site-header__brand {
-      width: 11.6rem;
     }
 
     .hero {

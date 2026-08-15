@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import iconmark from '../assets/brand/iconmark.png';
 import logoPrimary from '../assets/brand/logo-primary.png';
-import logoReversed from '../assets/brand/logo-reversed.png';
+import logoReversed from '../assets/brand/logo-reversed.webp';
 
 interface Props {
   variant?: 'primary' | 'reversed' | 'mark';
@@ -12,8 +12,14 @@ interface Props {
 
 const { variant = 'primary', class: className, loading = 'eager' } = Astro.props;
 const src = variant === 'mark' ? iconmark : variant === 'reversed' ? logoReversed : logoPrimary;
-const widths = variant === 'mark' ? [72, 144] : [240, 320, 400];
-const sizes = variant === 'mark' ? '4.4rem' : '(max-width: 68rem) 12rem, 15.2rem';
+const widths =
+  variant === 'mark' ? [72, 144] : variant === 'reversed' ? [320, 560, 800] : [240, 320, 400];
+const sizes =
+  variant === 'mark'
+    ? '4.4rem'
+    : variant === 'reversed'
+      ? 'min(100%, 28rem)'
+      : '(max-width: 68rem) 12rem, 15.2rem';
 const alt =
   variant === 'mark'
     ? 'Best Website Awards'

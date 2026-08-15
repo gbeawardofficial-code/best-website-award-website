@@ -1,6 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import type { NavigationItem } from '../lib/content/types';
-import BrandLogo from './BrandLogo.astro';
+import headerLogo from '../assets/brand/header-logo.webp';
 import ButtonLink from './ButtonLink.astro';
 
 interface Props {
@@ -16,7 +17,16 @@ const headerNavigation = navigation.filter((item) => item.showInHeader !== false
 <header class="site-header" data-site-header>
   <div class="container site-header__inner">
     <a class="site-header__brand" href={homeHref} aria-label="Best Website Awards home">
-      <BrandLogo />
+      <Image
+        class="site-header__logo"
+        src={headerLogo}
+        alt="Best Website Awards, powered by Global Business Excellence Awards"
+        loading="eager"
+        decoding="async"
+        width={400}
+        height={133}
+        format="webp"
+      />
     </a>
 
     <nav class="site-header__nav" aria-label="Primary navigation">
