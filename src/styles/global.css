@@ -963,7 +963,7 @@
     display: inline-block;
     margin-top: 0.4rem;
     font-family: var(--font-display);
-    font-size: clamp(1.45rem, 2.6vw, 2.2rem);
+    font-size: clamp(1.65rem, 3.2vw, 2.9rem);
     font-weight: 530;
     letter-spacing: -0.035em;
     transition: color 220ms ease;
@@ -977,6 +977,30 @@
     margin-top: 0.35rem;
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.75rem;
+  }
+
+  .site-footer__contact-side {
+    display: grid;
+    justify-items: end;
+    gap: 2rem;
+    flex-shrink: 0;
+  }
+
+  .site-footer__offices {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 1.5rem 2.5rem;
+    text-align: right;
+  }
+
+  .site-footer__office {
+    display: grid;
+    align-content: start;
+    gap: 0.2rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    font-style: normal;
+    line-height: 1.55;
   }
 
   .site-footer__social,
@@ -1946,6 +1970,24 @@
       align-items: flex-start;
       flex-direction: column;
       gap: 1.7rem;
+    }
+
+    .site-footer__contact-side {
+      width: 100%;
+      justify-items: start;
+      gap: 1.75rem;
+    }
+
+    .site-footer__offices {
+      width: 100%;
+      grid-template-columns: 1fr;
+      gap: 1.1rem;
+      text-align: left;
+    }
+
+    .site-footer__office {
+      min-width: 0;
+      font-size: 0.82rem;
     }
 
     .site-footer__nav {

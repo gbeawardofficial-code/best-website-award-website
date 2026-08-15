@@ -21,7 +21,25 @@ export const contactDetails = {
   email: 'info@gbeaward.com',
   location: 'London, United Kingdom',
   parentOrganisation: 'Global Business Excellence Awards',
-  parentWebsite: 'https://gbeaward.com/'
+  parentWebsite: 'https://gbeaward.com/',
+  offices: [
+    {
+      label: 'UK HQ',
+      lines: ['20 Wenlock Road', 'London, N1 7GU', 'United Kingdom']
+    },
+    {
+      label: 'UK Branch',
+      lines: ['71-75 Shelton Street', 'London, WC2H 9JQ', 'United Kingdom']
+    },
+    {
+      label: 'LK HQ',
+      lines: ['Level 26, East Tower', 'World Trade Center', 'Colombo 01, Sri Lanka']
+    },
+    {
+      label: 'LK Branch',
+      lines: ['345/35, R. I. T. Alles Mawatha', 'Borella, Colombo 08', 'Sri Lanka']
+    }
+  ]
 } satisfies ContactDetails;
 
 export const programmeDetails = {

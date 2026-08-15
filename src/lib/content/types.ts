@@ -24,11 +24,17 @@ export interface SocialLink {
   network: SocialNetwork;
 }
 
+export interface OfficeAddress {
+  label: string;
+  lines: string[];
+}
+
 export interface ContactDetails {
   email: string;
   location: string;
   parentOrganisation: string;
   parentWebsite: string;
+  offices: OfficeAddress[];
 }
 
 export interface PageSeo {

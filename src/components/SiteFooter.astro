@@ -44,21 +44,35 @@ const year = new Date().getFullYear();
       >
       <p class="site-footer__location">{contactDetails.location}</p>
     </div>
-    <nav class="site-footer__social" aria-label="Global Business Excellence Awards social media">
-      {
-        socialLinks.map((item) => (
-          <a
-            href={item.href}
-            target="_blank"
-            rel="external noopener noreferrer"
-            aria-label={`${item.label}, opens in a new tab`}
-            title={item.label}
-          >
-            <SocialIcon network={item.network} />
-          </a>
-        ))
-      }
-    </nav>
+    <div class="site-footer__contact-side">
+      <div class="site-footer__offices" aria-label="Office addresses">
+        {
+          contactDetails.offices.map((office) => (
+            <address class="site-footer__office">
+              <span class="site-footer__label">{office.label}</span>
+              {office.lines.map((line) => (
+                <span>{line}</span>
+              ))}
+            </address>
+          ))
+        }
+      </div>
+      <nav class="site-footer__social" aria-label="Global Business Excellence Awards social media">
+        {
+          socialLinks.map((item) => (
+            <a
+              href={item.href}
+              target="_blank"
+              rel="external noopener noreferrer"
+              aria-label={`${item.label}, opens in a new tab`}
+              title={item.label}
+            >
+              <SocialIcon network={item.network} />
+            </a>
+          ))
+        }
+      </nav>
+    </div>
   </div>
   {
     legalNavigation.length > 0 && (
