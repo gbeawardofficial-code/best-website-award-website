@@ -8,9 +8,15 @@ interface Props {
   navigation: NavigationItem[];
   legalNavigation?: NavigationItem[];
   currentPath?: string;
+  hideCookieSettings?: boolean;
 }
 
-const { navigation, legalNavigation = [], currentPath = '/' } = Astro.props;
+const {
+  navigation,
+  legalNavigation = [],
+  currentPath = '/',
+  hideCookieSettings = false
+} = Astro.props;
 const year = new Date().getFullYear();
 ---
 
@@ -82,9 +88,11 @@ const year = new Date().getFullYear();
             {item.label}
           </a>
         ))}
-        <button type="button" data-open-analytics-settings>
-          Cookie settings
-        </button>
+        {!hideCookieSettings && (
+          <button type="button" data-open-analytics-settings>
+            Cookie settings
+          </button>
+        )}
       </nav>
     )
   }

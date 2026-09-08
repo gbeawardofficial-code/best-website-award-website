@@ -15,6 +15,7 @@ const publicRoutes = [
   '/gallery',
   '/privacy-policy',
   '/process',
+  '/recognition',
   '/standard',
   '/terms',
   '/work'
@@ -61,9 +62,17 @@ if (JSON.stringify(config.cache) !== JSON.stringify(['.cache/astro/**'])) {
 }
 
 const functionRoutes = config.routes.filter((route) => route.dest === '_render');
-if (functionRoutes.length !== 1 || functionRoutes[0]?.src !== '^/api/contact$') {
-  fail(`expected only /api/contact to map to _render, found ${JSON.stringify(functionRoutes)}`);
+if (
+  functionRoutes.length !== 2 ||
+  !functionRoutes.some((route) => route.src === '^/api/contact$') ||
+  !functionRoutes.some((route) => route.src.startsWith('^/api/nomination/'))
+) {
+  fail(
+    `expected only contact and nomination APIs to map to _render, found ${JSON.stringify(functionRoutes)}`
+  );
 }
+if (!(await exists(resolve(staticRoot, 'nomination-status/index.html'))))
+  fail('payment status shell must be static');
 
 for (const forbiddenRoute of ['/_image', '/_server-islands', '/sitemap.xml']) {
   if (config.routes.some((route) => route.src?.includes(forbiddenRoute.slice(1)))) {
@@ -86,6 +95,17 @@ if (functionSize > 5_000_000) {
 }
 
 const sourceFiles = await readdir(resolve(root, 'src'));
+const staticAssets = await readdir(resolve(staticRoot, '_astro'));
+for (const name of staticAssets.filter((name) => /\.(js|css)$/.test(name))) {
+  const content = await readFile(resolve(staticRoot, '_astro', name), 'utf8');
+  if (
+    /neondatabase|GENIE_API_KEY|PAYMENT_DATA_KEY|DATABASE_URL|TURNSTILE_SECRET_KEY|RESEND_API_KEY/.test(
+      content
+    )
+  ) {
+    fail(`server-only payment or contact code entered public asset ${name}`);
+  }
+}
 if (sourceFiles.some((file) => /^middleware\.(?:js|ts|mjs|mts)$/.test(file))) {
   fail('unexpected top-level middleware requires an auth and database import audit');
 }
@@ -93,11 +113,15 @@ if (sourceFiles.some((file) => /^middleware\.(?:js|ts|mjs|mts)$/.test(file))) {
 const packageJson = JSON.parse(await readFile(resolve(root, 'package.json'), 'utf8'));
 const runtimePackages = Object.keys(packageJson.dependencies ?? {});
 if (
-  runtimePackages.some((name) => /auth|neon|drizzle|prisma|supabase|postgres|database/i.test(name))
+  runtimePackages.some(
+    (name) =>
+      name !== '@neondatabase/serverless' &&
+      /auth|neon|drizzle|prisma|supabase|postgres|database/i.test(name)
+  )
 ) {
   fail('an auth or database dependency has entered the public site runtime');
 }
 
 console.log(
-  `Vercel output verification passed: ${publicRoutes.length} static public pages, one ${(functionSize / 1_000_000).toFixed(2)} MB contact function, a persistent build image cache, and no public runtime image or server-island routes.`
+  `Vercel output verification passed: ${publicRoutes.length} static public pages, a static payment status shell, one ${(functionSize / 1_000_000).toFixed(2)} MB API function, a persistent build image cache, and no public runtime image or server-island routes.`
 );

@@ -14,3 +14,4 @@ artifacts/
 .DS_Store
 *.log
 .vercel
+!migrations/*.sql

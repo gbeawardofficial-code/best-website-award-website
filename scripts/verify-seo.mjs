@@ -170,6 +170,11 @@ for (const route of indexableRoutes) {
 }
 
 const titles = pageDocuments.map((page) => page.title);
+const paymentStatus = await readRoute('/nomination-status');
+if (!getMetaContent(paymentStatus, 'name="robots"')?.startsWith('noindex'))
+  fail('payment status must be noindex');
+if (paymentStatus.includes('data-consent'))
+  fail('payment status must not load analytics consent code');
 const descriptions = pageDocuments.map((page) => page.description);
 if (new Set(titles).size !== titles.length) fail('indexable pages contain duplicate titles');
 if (new Set(descriptions).size !== descriptions.length) {

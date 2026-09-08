@@ -207,10 +207,11 @@ test('contact page publishes official channels and completes a website enquiry',
   await page.getByLabel('Work email *').fill('entrant@example.com');
   await page.getByLabel('Organisation *').fill('Example Studio');
   await page.getByLabel('Website address *').fill('https://example.com');
-  await page.getByRole('checkbox').check();
-  await page.getByRole('button', { name: 'Send website details' }).click();
+  await page.locator('[data-enquiry-type]').selectOption('eligibility');
+  await page.locator('input[name="privacyAccepted"]').check();
+  await page.getByRole('button', { name: 'Send enquiry' }).click();
 
-  await expect(page.getByRole('status')).toContainText(
+  await expect(page.locator('[data-form-status]')).toContainText(
     'Thank you. Your website details are now with the awards team.'
   );
 });

@@ -11,6 +11,8 @@
     "path-to-regexp": "^6.3.0"
   },
   "scripts": {
+    "payments:migrate": "node --env-file=.env scripts/migrate-payments.mjs",
+    "payments:reconcile": "node --env-file=.env scripts/reconcile-payments.mjs",
     "dev": "astro dev",
     "build": "node scripts/prepare-vercel-output.mjs && astro build && node scripts/harden-vercel-output.mjs",
     "check": "astro check",
@@ -30,6 +32,7 @@
     "@fontsource-variable/funnel-sans": "^5.2.8",
     "@fortawesome/free-brands-svg-icons": "^7.3.1",
     "@lucide/astro": "^1.24.0",
+    "@neondatabase/serverless": "^1.1.0",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.1.0",
     "motion": "^12.42.2",

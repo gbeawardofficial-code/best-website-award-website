@@ -19,6 +19,7 @@ interface Props {
   };
   pageType?: PageSeo['pageType'];
   noIndex?: boolean;
+  disableAnalytics?: boolean;
   faqItems?: UtilitySection[];
   structuredImages?: Array<{
     url: URL;
@@ -39,6 +40,7 @@ const {
   preloadImage,
   pageType = 'WebPage',
   noIndex = false,
+  disableAnalytics = false,
   faqItems,
   structuredImages = [],
   structuredOrganizations = []
@@ -101,7 +103,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <slot />
-    <AnalyticsConsent />
+    {!disableAnalytics && <AnalyticsConsent />}
     <script>
       import '../scripts/site-motion';
     </script>

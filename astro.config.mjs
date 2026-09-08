@@ -9,11 +9,12 @@ export default defineConfig({
   output: 'static',
   cacheDir: './.cache/astro',
   adapter: vercel({
-    maxDuration: 15
+    maxDuration: 30
   }),
   trailingSlash: 'never',
   integrations: [
     sitemap({
+      filter: (page) => !page.includes('/nomination-status'),
       namespaces: {
         news: false,
         video: false,

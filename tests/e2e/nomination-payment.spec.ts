@@ -1,0 +1,141 @@
+import { expect, test, type Page } from '@playwright/test';
+
+const reference = '4f07dbbb-f612-4f46-96db-cf8823ffc395';
+async function prepare(page: Page) {
+  await page.route('https://challenges.cloudflare.com/turnstile/v0/api.js', (route) =>
+    route.fulfill({
+      contentType: 'application/javascript',
+      body: `window.turnstile={reset(){}};const i=document.createElement('input');i.name='cf-turnstile-response';i.type='hidden';i.value='test-token';document.querySelector('.cf-turnstile').append(i);`
+    })
+  );
+  await page.route('**/api/nomination/session', (route) => route.fulfill({ json: { ok: true } }));
+  await page.goto('/contact');
+  await page.locator('#contact-name').fill('Test Entrant');
+  await page.locator('#contact-email').fill('entrant@example.com');
+  await page.locator('#contact-organisation').fill('Example Studio');
+  await page.locator('#contact-website').fill('https://example.com');
+  await page.locator('input[name="privacyAccepted"]').check();
+}
+
+test('fee popup is clear, accessible and cancellable without losing the form', async ({
+  page
+}, testInfo) => {
+  const errors: string[] = [];
+  page.on('pageerror', (error) => errors.push(error.message));
+  await prepare(page);
+  await page.getByRole('button', { name: 'Continue nomination' }).click();
+  const modal = page.locator('[data-payment-dialog]');
+  await expect(modal).toBeVisible();
+  await expect(modal.getByText('Rs. 2,850', { exact: true })).toBeVisible();
+  await expect(modal.locator('li')).toHaveCount(3);
+  await expect(modal.getByRole('button', { name: 'Pay Rs. 2,850 by card' })).toBeDisabled();
+  await modal.getByRole('checkbox').check();
+  await expect(modal.getByRole('button', { name: 'Pay Rs. 2,850 by card' })).toBeEnabled();
+  await page.screenshot({ path: `/tmp/bwa-payment-${testInfo.project.name}.png`, fullPage: false });
+  expect(await modal.evaluate((el) => el.scrollWidth <= el.clientWidth)).toBe(true);
+  await page.keyboard.press('Escape');
+  await expect(modal).not.toBeVisible();
+  await expect(page.locator('#contact-name')).toHaveValue('Test Entrant');
+  expect(errors).toEqual([]);
+});
+
+test('nomination starts checkout only after explicit fee agreement', async ({ page }) => {
+  await prepare(page);
+  let started = 0;
+  await page.route('**/api/contact', () => {
+    throw new Error('Paid nomination must not use free contact API');
+  });
+  await page.route('**/api/nomination/start', async (route) => {
+    started++;
+    expect(route.request().postData()).toContain('2026-09-09');
+    await route.fulfill({
+      json: {
+        ok: true,
+        payment: {
+          reference,
+          state: 'pending',
+          submitted: false,
+          checkoutUrl: 'https://transaction.uat.geniebiz.lk/test-checkout'
+        }
+      }
+    });
+  });
+  await page.route('https://transaction.uat.geniebiz.lk/test-checkout', (route) =>
+    route.fulfill({ contentType: 'text/html', body: '<h1>Hosted test checkout</h1>' })
+  );
+  await page.getByRole('button', { name: 'Continue nomination' }).click();
+  expect(started).toBe(0);
+  await page.getByRole('dialog').getByRole('checkbox').check();
+  await page.getByRole('button', { name: 'Pay Rs. 2,850 by card' }).click();
+  await expect(page).toHaveURL('https://transaction.uat.geniebiz.lk/test-checkout');
+  expect(started).toBe(1);
+});
+
+test('paid nomination confirmation offers another submission and stays noindex', async ({
+  page
+}) => {
+  await page.route('**/api/nomination/status?*', (route) =>
+    route.fulfill({
+      json: {
+        ok: true,
+        payment: {
+          reference,
+          state: 'paid',
+          submitted: true,
+          message: 'Your nomination has been sent to the awards team.'
+        }
+      }
+    })
+  );
+  await page.goto(`/nomination-status?reference=${reference}`);
+  await expect(page.getByRole('dialog')).toBeVisible();
+  await expect(page.getByRole('dialog').getByRole('heading')).toHaveText(
+    'Your nomination is received.'
+  );
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+  await expect(page).toHaveURL(/\/nomination-status$/);
+  await page.getByRole('dialog').getByRole('link', { name: 'Submit another website' }).click();
+  await expect(page).toHaveURL(/\/contact#nomination-form$/);
+  expect(await page.evaluate(() => sessionStorage.getItem('bwaPaymentReference'))).toBeNull();
+});
+
+test('paid email delay does not show another payment option or false success', async ({ page }) => {
+  await page.route('**/api/nomination/status?*', (route) =>
+    route.fulfill({
+      json: {
+        ok: true,
+        payment: {
+          reference,
+          state: 'paid',
+          submitted: false,
+          message: 'Your payment is confirmed. Please do not pay again.'
+        }
+      }
+    })
+  );
+  await page.goto(`/nomination-status?reference=${reference}`);
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Payment confirmed.');
+  await expect(page.getByRole('dialog')).not.toBeVisible();
+  await expect(page.locator('[data-resume-payment]')).not.toBeVisible();
+  await expect(page.locator('main [data-another-nomination]')).not.toBeVisible();
+});
+
+test('unavailable checkout leaves the form recoverable without taking payment', async ({
+  page
+}) => {
+  await prepare(page);
+  await page.route('**/api/nomination/session', (route) =>
+    route.fulfill({
+      status: 503,
+      json: { ok: false, message: 'Online nominations are temporarily unavailable.' }
+    })
+  );
+  await page.getByRole('button', { name: 'Continue nomination' }).click();
+  await expect(page.locator('[data-payment-feedback]')).toHaveText(
+    'Online nominations are temporarily unavailable.'
+  );
+  await page.getByRole('dialog').getByRole('checkbox').check();
+  await expect(page.getByRole('button', { name: 'Pay Rs. 2,850 by card' })).toBeDisabled();
+  await page.getByRole('button', { name: 'Back to your details' }).click();
+  await expect(page.locator('#contact-website')).toHaveValue('https://example.com');
+});

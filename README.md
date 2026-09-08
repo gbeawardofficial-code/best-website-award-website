@@ -36,41 +36,45 @@
 
 This repository contains the public-facing Best Website Awards website. It is intentionally focused: concise editorial pages, a clear evaluation framework, an accessible enquiry journey, strong search foundations, and no public-voting flow.
 
-The site uses Astro's static-first architecture. Every public page, `robots.txt`, and the direct sitemap are pre-rendered. The contact endpoint is the only Vercel function. Typed content and managed-media boundaries keep the presentation layer ready for a future Neon and Cloudflare R2-backed content source without coupling components to a database or storage provider today.
+The site uses Astro's static-first architecture. Every public page, `robots.txt`, and the direct sitemap are pre-rendered. Contact and nomination payment APIs share one isolated Vercel function. Neon stores encrypted nomination details and payment recovery records, while public content remains static behind typed content and managed-media boundaries.
 
 The separate admin and awards portal applications are not part of this repository.
 
 ## Production architecture
 
-| Surface                        | Delivery                           | Source                         | Cache and indexing                                      |
-| ------------------------------ | ---------------------------------- | ------------------------------ | ------------------------------------------------------- |
-| 12 public pages                | Pre-rendered HTML on Vercel's edge | Typed, versioned local content | Layered browser and CDN caching; indexable              |
-| `sitemap.xml` and `robots.txt` | Pre-rendered static files          | Site route configuration       | CDN cached; sitemap exposes the canonical public routes |
-| `/_astro/*`                    | Fingerprinted static assets        | Astro build pipeline           | One-year immutable caching                              |
-| `/api/contact`                 | One isolated Vercel function       | Validated form submission      | `no-store`; `noindex, nofollow`                         |
-| Programme images               | Astro build-time image pipeline    | `ManagedPicture.astro`         | Static responsive WebP files with explicit dimensions   |
+| Surface                        | Delivery                           | Source                                        | Cache and indexing                                      |
+| ------------------------------ | ---------------------------------- | --------------------------------------------- | ------------------------------------------------------- |
+| 13 public pages                | Pre-rendered HTML on Vercel's edge | Typed, versioned local content                | Layered browser and CDN caching; indexable              |
+| `sitemap.xml` and `robots.txt` | Pre-rendered static files          | Site route configuration                      | CDN cached; sitemap exposes the canonical public routes |
+| `/_astro/*`                    | Fingerprinted static assets        | Astro build pipeline                          | One-year immutable caching                              |
+| `/api/contact`                 | One isolated Vercel function       | Validated form submission                     | `no-store`; `noindex, nofollow`                         |
+| `/api/nomination/*`            | Same isolated Vercel function      | Genie verification and encrypted Neon records | `no-store`; `noindex, nofollow`                         |
+| `/nomination-status`           | Pre-rendered status shell          | Session-authorised status API                 | `no-store`; non-indexable; no analytics                 |
+| Programme images               | Astro build-time image pipeline    | `ManagedPicture.astro`                        | Static responsive WebP files with explicit dimensions   |
 
-The generated Vercel output is hardened after each build. Unused runtime image and server-island routes are removed, and the verification gate proves that only `/api/contact` maps to server compute.
+The generated Vercel output is hardened after each build. Unused runtime image and server-island routes are removed, and the verification gate proves that only contact and nomination APIs map to server compute.
 
 Production image variants are encoded during the build and emitted as fingerprinted static files. Vercel Image Optimization remains disabled, so public image requests never consume image-transformation quota or runtime compute. A persistent Astro image cache is declared in the Vercel Build Output API, allowing unchanged transforms to be reused by later deployments.
 
 ## Technology
 
-| Area                   | Implementation                                                 |
-| ---------------------- | -------------------------------------------------------------- |
-| Framework              | Astro 7 with the Vercel adapter                                |
-| Styling                | Tailwind CSS 4 using the `tw:` prefix, plus focused global CSS |
-| Language               | TypeScript 6 in strict mode                                    |
-| Images                 | Astro assets with cached build-time Sharp optimization         |
-| Typography             | Self-hosted Funnel Display and Funnel Sans variable fonts      |
-| Motion                 | Motion with reduced-motion-safe behavior                       |
-| Icons                  | Lucide Astro and Font Awesome brand SVGs                       |
-| Unit and content tests | Vitest                                                         |
-| Browser tests          | Playwright on desktop Chromium and mobile Chromium             |
-| Analytics              | Consent-gated Google Analytics 4 with Consent Mode v2          |
-| Form protection        | Cloudflare Turnstile                                           |
-| Email delivery         | Resend                                                         |
-| Hosting                | Vercel behind Cloudflare                                       |
+| Area                   | Implementation                                                         |
+| ---------------------- | ---------------------------------------------------------------------- |
+| Framework              | Astro 7 with the Vercel adapter                                        |
+| Styling                | Tailwind CSS 4 using the `tw:` prefix, plus focused global CSS         |
+| Language               | TypeScript 6 in strict mode                                            |
+| Images                 | Astro assets with cached build-time Sharp optimization                 |
+| Typography             | Self-hosted Funnel Display and Funnel Sans variable fonts              |
+| Motion                 | Motion with reduced-motion-safe behavior                               |
+| Icons                  | Lucide Astro and Font Awesome brand SVGs                               |
+| Unit and content tests | Vitest                                                                 |
+| Browser tests          | Playwright on desktop Chromium and mobile Chromium                     |
+| Analytics              | Consent-gated Google Analytics 4 with Consent Mode v2                  |
+| Form protection        | Cloudflare Turnstile                                                   |
+| Email delivery         | Resend                                                                 |
+| Nomination payment     | Genie Business hosted checkout, LKR 2,850 per website                  |
+| Payment recovery       | Encrypted records in Neon Postgres, signed webhooks and daily recovery |
+| Hosting                | Vercel behind Cloudflare                                               |
 
 ## Public routes
 
@@ -83,6 +87,7 @@ Production image variants are encoded during the build and emitted as fingerprin
 | `/process`        | Entry and recognition journey                      |
 | `/gallery`        | Authentic awards ceremony photography              |
 | `/about`          | Organisation and parent-brand context              |
+| `/recognition`    | The four-part recognition framework                |
 | `/faq`            | Programme questions and structured FAQ content     |
 | `/contact`        | Protected enquiry and website submission form      |
 | `/privacy-policy` | Privacy information                                |
@@ -104,9 +109,11 @@ src/
 ├── layouts/                   # Shared public and editorial page shells
 ├── lib/
 │   ├── content/               # Typed content-source boundary
+│   ├── server/                # Payment verification, encrypted storage and email
 │   └── contact.ts             # Contact validation and escaping
 ├── pages/
-│   ├── api/contact.ts         # The only server-rendered endpoint
+│   ├── api/contact.ts         # Free enquiries, not unpaid nominations
+│   ├── api/nomination/        # Payment start, status, webhook and recovery APIs
 │   ├── *.astro                # Pre-rendered public routes
 │   ├── robots.txt.ts
 │   └── sitemap.xml.ts
@@ -143,7 +150,7 @@ npm run dev
 
 The development server runs at [http://localhost:4321](http://localhost:4321).
 
-The public pages work without contact-provider credentials. Add the environment variables below when testing the real contact flow.
+The public pages work without provider credentials. Add the contact variables below for enquiries and follow the [payment deployment guide](./docs/payments.md) for nominations.
 
 ## Environment variables
 
@@ -165,6 +172,8 @@ Never commit `.env`, provider keys, or copied Vercel environment files. Producti
 
 ## Contact delivery
 
+Paid nominations show the fee and terms before opening Genie checkout. The nomination is saved and delivered only after the server confirms the exact transaction amount, currency, merchant, application and nomination reference. See [Nomination payments](./docs/payments.md) for the full environment contract, migration, sandbox testing, recovery and manual GBE Vercel deployment steps.
+
 The contact flow is deliberately isolated from the static site:
 
 1. The browser submits `multipart/form-data` to `/api/contact`.
@@ -174,7 +183,7 @@ The contact flow is deliberately isolated from the static site:
 5. Resend delivers the enquiry to the configured programme inbox.
 6. Every API response is returned with `no-store` and `X-Robots-Tag: noindex, nofollow`.
 
-The function has a 15-second Vercel duration limit, while individual provider calls use shorter timeouts so requests fail predictably.
+The function has a 30-second Vercel duration limit, while individual provider calls use five-second timeouts. Public page requests never invoke it.
 
 ## Content and media
 
@@ -249,7 +258,7 @@ git diff --check
 
 - Every public route is emitted as a static file
 - Sitemap and robots are static
-- Only `/api/contact` maps to the Vercel function
+- Only contact and nomination APIs map to the Vercel function
 - The persistent Astro image cache is included in the Vercel build-cache contract
 - Unused runtime image and server-island routes are absent
 - Sharp native binaries are not packaged into the contact function

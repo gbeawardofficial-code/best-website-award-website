@@ -1,0 +1,193 @@
+.nomination-dialog {
+  border: 1px solid #dde3ed;
+  border-radius: 24px;
+  padding: clamp(1.5rem, 4vw, 2rem);
+  background: #fff;
+  color: #0d1117;
+  width: min(33rem, calc(100% - 2rem));
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+  margin: auto;
+  box-shadow: 0 24px 100px #0d11172b;
+}
+.nomination-dialog::backdrop {
+  background: #10182775;
+  backdrop-filter: blur(4px);
+}
+.nomination-dialog[open] {
+  animation: nomination-enter 0.2s ease-out;
+}
+.nomination-dialog h2,
+.nomination-status h1 {
+  font-size: clamp(1.7rem, 4vw, 2.15rem);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  max-width: 17ch;
+  margin: 0.6rem 0 0.8rem;
+}
+.nomination-dialog__close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: #f3f5f9;
+  cursor: pointer;
+}
+.nomination-dialog__icon {
+  color: #1746d1;
+  background: #edf2ff;
+  border-radius: 14px;
+  padding: 10px;
+  display: inline-flex;
+  margin-bottom: 0.8rem;
+}
+.nomination-kicker {
+  font-size: 0.69rem;
+  font-weight: 700;
+  color: #1746d1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.nomination-muted {
+  font-size: 0.93rem;
+  color: #59616e;
+  line-height: 1.6;
+}
+.nomination-fee {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 0;
+  border-top: 1px solid #dde3ed;
+  border-bottom: 1px solid #dde3ed;
+  margin: 1rem 0;
+}
+.nomination-fee strong {
+  font-family: 'Funnel Display Variable', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 550;
+  letter-spacing: -0.045em;
+}
+.nomination-fee span {
+  font-size: 0.8rem;
+  color: #59616e;
+}
+.nomination-benefits {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.nomination-benefits li {
+  display: flex;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.nomination-benefits svg {
+  color: #1746d1;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+.nomination-disclosure {
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: #59616e;
+}
+.nomination-agreement {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  padding: 1rem 0;
+}
+.nomination-agreement input {
+  margin-top: 0.15rem;
+  width: 18px;
+  height: 18px;
+  accent-color: #1746d1;
+  flex-shrink: 0;
+}
+.nomination-agreement a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.nomination-pay {
+  width: 100%;
+  justify-content: center;
+}
+.nomination-pay:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.nomination-security {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: #59616e;
+  font-size: 0.72rem;
+  line-height: 1.55;
+}
+.nomination-security svg {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+.nomination-feedback {
+  padding: 0.85rem;
+  border-radius: 8px;
+  background: #f5f7fc;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.nomination-status {
+  max-width: 42rem;
+  margin: auto;
+  padding: clamp(6rem, 12vw, 10rem) 1.25rem;
+  min-height: 70vh;
+}
+.nomination-status__reference {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f5f7fc;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+.nomination-status__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.nomination-status a:not(.contact-form__submit) {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.nomination-status [hidden],
+.nomination-dialog [hidden] {
+  display: none !important;
+}
+@keyframes nomination-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nomination-dialog[open] {
+    animation: none;
+  }
+}

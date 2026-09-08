@@ -2,6 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
+  "crons": [{ "path": "/api/nomination/reconcile", "schedule": "0 3 * * *" }],
   "headers": [
     {
       "source": "/(.*)",
@@ -78,6 +79,16 @@
           "key": "Vercel-CDN-Cache-Control",
           "value": "public, s-maxage=86400, stale-while-revalidate=604800"
         }
+      ]
+    },
+    {
+      "source": "/nomination-status",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" },
+        { "key": "CDN-Cache-Control", "value": "no-store" },
+        { "key": "Vercel-CDN-Cache-Control", "value": "no-store" },
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+        { "key": "Referrer-Policy", "value": "no-referrer" }
       ]
     },
     {

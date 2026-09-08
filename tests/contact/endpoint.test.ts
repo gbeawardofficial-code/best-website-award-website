@@ -4,7 +4,7 @@ import { POST } from '../../src/pages/api/contact';
 const formRequest = () => {
   const formData = new FormData();
   formData.set('submissionId', '4f07dbbb-f612-4f46-96db-cf8823ffc395');
-  formData.set('enquiryType', 'present');
+  formData.set('enquiryType', 'eligibility');
   formData.set('name', 'Test Entrant');
   formData.set('email', 'entrant@example.com');
   formData.set('organisation', 'Example Studio');
@@ -20,6 +20,20 @@ const formRequest = () => {
 };
 
 describe('contact API endpoint', () => {
+  it('cannot submit a nomination without verified payment', async () => {
+    vi.stubEnv('RESEND_API_KEY', 'test');
+    const original = formRequest();
+    const form = await original.formData();
+    form.set('enquiryType', 'present');
+    const request = new Request(original.url, {
+      method: 'POST',
+      headers: { Origin: 'http://localhost' },
+      body: form
+    });
+    const fetchMock = vi.spyOn(globalThis, 'fetch');
+    expect((await POST({ request, clientAddress: '127.0.0.1' } as never)).status).toBe(402);
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
   beforeEach(() => {
     vi.stubEnv('TURNSTILE_SECRET_KEY', 'test-turnstile-secret');
     vi.stubEnv('RESEND_API_KEY', 'test-resend-key');

@@ -2,6 +2,7 @@
 import { ArrowUpRight, CalendarDays, Check, Mail, MapPin, ShieldCheck } from '@lucide/astro';
 import { contactDetails, programmeDetails, socialLinks } from '../data/site';
 import SocialIcon from './SocialIcon.astro';
+import NominationPayment from './NominationPayment.astro';
 
 const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 ---
@@ -208,10 +209,10 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 
         <div class="contact-form__submit-row">
           <button type="submit" class="contact-form__submit" disabled={!turnstileSiteKey}>
-            <span data-submit-label>Send website details</span>
+            <span data-submit-label>Continue nomination</span>
             <ArrowUpRight aria-hidden="true" size={19} stroke-width={1.8} />
           </button>
-          <p>We’ll reply to the email you provide.</p>
+          <p data-fee-notice>Nomination fee: Rs. 2,850. Pay securely in the next step.</p>
         </div>
 
         <div class="contact-form__status" data-form-status role="status" aria-live="polite" hidden>
@@ -229,94 +230,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
   )
 }
 
+<NominationPayment />
 <script>
-  const form = document.querySelector<HTMLFormElement>('[data-contact-form]');
-  const enquiryType = form?.querySelector<HTMLSelectElement>('[data-enquiry-type]');
-  const websiteField = form?.querySelector<HTMLElement>('[data-website-field]');
-  const websiteInput = websiteField?.querySelector<HTMLInputElement>('input');
-  const status = form?.querySelector<HTMLElement>('[data-form-status]');
-  const statusCopy = status?.querySelector<HTMLParagraphElement>('p');
-  const submitButton = form?.querySelector<HTMLButtonElement>('button[type="submit"]');
-  const submitLabel = form?.querySelector<HTMLElement>('[data-submit-label]');
-  const submissionId = form?.querySelector<HTMLInputElement>('[data-submission-id]');
-  const turnstileWindow = window as typeof window & {
-    turnstile?: { reset: (container?: string | HTMLElement) => void };
-  };
-
-  const renewSubmissionId = () => {
-    if (submissionId) submissionId.value = crypto.randomUUID();
-  };
-
-  const updateWebsiteRequirement = () => {
-    const isWebsitePresentation = enquiryType?.value === 'present';
-    if (websiteInput) websiteInput.required = isWebsitePresentation;
-    websiteField?.classList.toggle('contact-form__field--optional', !isWebsitePresentation);
-
-    const requirement = websiteField?.querySelector('label span');
-    if (requirement) requirement.textContent = isWebsitePresentation ? '*' : 'Optional';
-  };
-
-  const showStatus = (message: string, kind: 'success' | 'error') => {
-    if (!status || !statusCopy) return;
-    status.hidden = false;
-    status.dataset.kind = kind;
-    statusCopy.textContent = message;
-    status.focus({ preventScroll: true });
-  };
-
-  renewSubmissionId();
-  updateWebsiteRequirement();
-  enquiryType?.addEventListener('change', updateWebsiteRequirement);
-
-  form?.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    if (!form.reportValidity() || !submitButton || !submitLabel) return;
-
-    const token = form.querySelector<HTMLInputElement>(
-      'input[name="cf-turnstile-response"]'
-    )?.value;
-    if (!token) {
-      showStatus('Please complete the secure verification before sending.', 'error');
-      return;
-    }
-
-    submitButton.disabled = true;
-    submitButton.setAttribute('aria-busy', 'true');
-    submitLabel.textContent = 'Sending…';
-    if (status) status.hidden = true;
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' }
-      });
-      const result = (await response.json()) as { ok?: boolean; message?: string };
-
-      if (!response.ok || !result.ok) {
-        throw new Error(result.message || 'We could not send your enquiry. Please try again.');
-      }
-
-      form.reset();
-      renewSubmissionId();
-      updateWebsiteRequirement();
-      turnstileWindow.turnstile?.reset('.cf-turnstile');
-      showStatus(
-        result.message || 'Thank you. Your website details are now with the awards team.',
-        'success'
-      );
-    } catch (error) {
-      turnstileWindow.turnstile?.reset('.cf-turnstile');
-      showStatus(
-        error instanceof Error
-          ? error.message
-          : 'We could not send your enquiry. Please try again.',
-        'error'
-      );
-    } finally {
-      submitButton.disabled = false;
-      submitButton.removeAttribute('aria-busy');
-      submitLabel.textContent = 'Send website details';
-    }
-  });
+  import '../scripts/contact-form';
 </script>

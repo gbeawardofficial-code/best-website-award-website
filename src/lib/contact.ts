@@ -51,7 +51,7 @@ export const parseContactSubmission = (formData: FormData): ContactValidationRes
     ? suppliedSubmissionId
     : crypto.randomUUID();
 
-  if (!(enquiryType in enquiryLabels)) return { error: 'Choose the type of enquiry.' };
+  if (!Object.hasOwn(enquiryLabels, enquiryType)) return { error: 'Choose the type of enquiry.' };
   if (name.length < 2) return { error: 'Enter your name.' };
   if (!validEmail.test(email)) return { error: 'Enter a valid email address.' };
   if (organisation.length < 2) return { error: 'Enter your organisation or studio.' };

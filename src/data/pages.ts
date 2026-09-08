@@ -833,6 +833,14 @@ export const utilityPages = {
         ]
       },
       {
+        title: 'Nomination payments',
+        body: [
+          'For paid nominations, we securely store your submitted details, nomination reference, payment amount, transaction reference and processing status. This allows us to confirm payment, deliver your nomination and resolve interrupted submissions.',
+          'Card payments are handled on Genie Business’s hosted checkout. We do not collect or store card numbers, security codes or banking passwords. Essential session cookies connect your browser to its nomination for up to seven days.',
+          'Nomination details are encrypted in our database. Records are retained for programme administration, payment enquiries and applicable record-keeping obligations. Contact info@gbeaward.com to ask about access or deletion.'
+        ]
+      },
+      {
         title: 'External services and links',
         body: [
           'This website links to Global Business Excellence Awards, verified social channels and other external services. Those services are governed by their own privacy practices.'
@@ -860,6 +868,21 @@ export const utilityPages = {
         body: [
           `${programmeDetails.status} for Best Website Awards ${programmeDetails.date}.`,
           `Eligible entries are live, functional websites presented by their owner or an authorised contributor. New websites and substantial redesigns from any country may be considered. ${programmeDetails.feeGuidance}`
+        ]
+      },
+      {
+        title: 'Nomination fee and payment',
+        body: [
+          'The online nomination fee is Rs. 2,850 in Sri Lankan rupees for each website nomination. The amount is shown before payment and is charged once, not as a subscription. General enquiries do not carry this fee.',
+          'The fee supports entry checks, nomination administration and evaluation processing. A paid nomination is submitted for review and does not guarantee eligibility, selection, an award or a particular outcome.',
+          'Your nomination is confirmed only after the payment provider confirms payment. If checkout is interrupted or a bank debit appears without confirmation, check the nomination status or contact info@gbeaward.com before paying again.'
+        ]
+      },
+      {
+        title: 'Payment questions and refunds',
+        body: [
+          'For a duplicate charge, an incorrect payment or a cancellation request, contact info@gbeaward.com with your nomination and transaction references. Do not send card numbers or security codes.',
+          'The awards team will review the payment record and explain the next step. Any approved refund is processed through the payment provider to the original payment method. Bank processing times may vary. Nothing in these terms limits rights that apply under law.'
         ]
       },
       {

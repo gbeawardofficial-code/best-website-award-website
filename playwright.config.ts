@@ -18,7 +18,7 @@ export default defineConfig({
     { name: 'mobile-chromium', use: { ...devices['iPhone 13'], browserName: 'chromium' } }
   ],
   webServer: {
-    command: `npm run dev -- --host 127.0.0.1 --port ${testPort}`,
+    command: `npm run dev -- --ignore-lock --host 127.0.0.1 --port ${testPort}`,
     url: testBaseUrl,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

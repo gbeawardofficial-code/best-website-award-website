@@ -1,0 +1,55 @@
+---
+import { CreditCard, ShieldCheck, X, Check } from '@lucide/astro';
+import { getNominationContent } from '../lib/content/nomination';
+import { PAYMENT_TERMS_VERSION } from '../lib/payments/policy';
+import '../styles/nomination.css';
+const content = await getNominationContent();
+---
+
+<dialog
+  class="nomination-dialog"
+  data-payment-dialog
+  aria-labelledby="payment-title"
+  aria-describedby="payment-intro"
+>
+  <button
+    class="nomination-dialog__close"
+    type="button"
+    data-close-payment
+    aria-label="Back to your details"><X size={22} aria-hidden="true" /></button
+  >
+  <div class="nomination-dialog__icon">
+    <CreditCard size={26} stroke-width={1.6} aria-hidden="true" />
+  </div>
+  <p class="nomination-kicker">Complete your nomination</p>
+  <h2 id="payment-title">{content.title}</h2>
+  <p id="payment-intro" class="nomination-muted">{content.introduction}</p>
+  <div class="nomination-fee"><strong>{content.fee}</strong><span>{content.feeLabel}</span></div>
+  <ul class="nomination-benefits">
+    {
+      content.benefits.map((benefit) => (
+        <li>
+          <>
+            <Check size={18} aria-hidden="true" />
+            <span>{benefit}</span>
+          </>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="nomination-disclosure">{content.disclosure}</p>
+  <label class="nomination-agreement"
+    ><input type="checkbox" data-payment-agreement value={PAYMENT_TERMS_VERSION} /><span
+      >I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer"
+        >nomination and payment terms</a
+      >.</span
+    ></label
+  >
+  <p class="nomination-feedback" data-payment-feedback role="status" aria-live="polite" hidden></p>
+  <button class="contact-form__submit nomination-pay" type="button" data-pay-card disabled
+    ><span>{content.cardLabel}</span><CreditCard size={19} aria-hidden="true" /></button
+  >
+  <p class="nomination-security">
+    <ShieldCheck size={16} aria-hidden="true" /><span>{content.security}</span>
+  </p>
+</dialog>

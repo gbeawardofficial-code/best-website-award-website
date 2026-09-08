@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { siteNavigation, legalNavigation } from '../data/site';
+import { getNominationContent } from '../lib/content/nomination';
+import iconmark from '../assets/brand/iconmark.png';
+import { Check } from '@lucide/astro';
+import '../styles/nomination.css';
+export const prerender = true;
+const content = await getNominationContent();
+---
+
+<BaseLayout
+  title="Nomination status | Best Website Awards"
+  description="Check your secure payment and website nomination status."
+  image={new URL(iconmark.src, Astro.site)}
+  noIndex
+  disableAnalytics
+>
+  <div id="top"></div>
+  <SiteHeader navigation={siteNavigation} currentPath="/contact" />
+  <main id="main-content" class="nomination-status">
+    <p class="nomination-kicker">Best Website Awards</p>
+    <h1 data-payment-status-title>Checking your nomination.</h1>
+    <p class="nomination-muted" data-payment-status-message role="status" aria-live="polite">
+      Please keep this page open while we confirm your payment securely.
+    </p>
+    <p class="nomination-status__reference" data-payment-reference hidden></p>
+    <div class="nomination-status__actions">
+      <button type="button" class="contact-form__submit" data-check-payment>Check again</button>
+      <a class="contact-form__submit" data-resume-payment hidden>Continue payment</a>
+      <a href="/contact#nomination-form" data-another-nomination hidden>Return to the form</a>
+    </div>
+    <p class="nomination-muted">
+      Need help? Email <a href="mailto:info@gbeaward.com">info@gbeaward.com</a> with your reference. Never
+      send card details.
+    </p>
+    <noscript
+      ><p>
+        Enable JavaScript to check your payment status, or contact the awards team with your payment
+        reference. Do not pay again if your bank shows a debit.
+      </p></noscript
+    >
+  </main>
+  <dialog class="nomination-dialog" data-success-dialog aria-labelledby="nomination-success-title">
+    <div class="nomination-dialog__icon"><Check size={28} aria-hidden="true" /></div>
+    <p class="nomination-kicker">Payment confirmed</p>
+    <h2 id="nomination-success-title">{content.successTitle}</h2>
+    <p class="nomination-muted">{content.successMessage}</p>
+    <div class="nomination-status__actions">
+      <a href="/contact#nomination-form" class="contact-form__submit" data-another-nomination
+        >Submit another website</a
+      ><button type="button" data-close-success>View confirmation</button>
+    </div>
+  </dialog>
+  <SiteFooter
+    hideCookieSettings
+    navigation={siteNavigation}
+    legalNavigation={legalNavigation}
+    currentPath="/contact"
+  />
+  <script>
+    import '../scripts/nomination-status';
+  </script>
+</BaseLayout>
