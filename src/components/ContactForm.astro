@@ -200,6 +200,10 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
                 data-theme="light"
                 data-size="flexible"
                 data-action="contact_form"
+                data-error-callback="bwaVerificationError"
+                data-expired-callback="bwaVerificationExpired"
+                data-timeout-callback="bwaVerificationExpired"
+                data-callback="bwaVerificationComplete"
               />
             ) : (
               <p class="contact-form__unavailable">Verification is temporarily unavailable.</p>
@@ -223,6 +227,36 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
     </div>
   </div>
 </section>
+
+<script is:inline>
+  // Register before the asynchronous verification script can invoke its callbacks.
+  (() => {
+    const notice = (message) => {
+      const status = document.querySelector('[data-form-status]');
+      if (!status || status.dataset.kind === 'success') return true;
+      status.hidden = false;
+      status.dataset.kind = 'error';
+      status.dataset.verification = 'true';
+      status.querySelector('p').textContent = message;
+      return true;
+    };
+    window.bwaVerificationError = () =>
+      notice(
+        'Secure verification could not load. Please refresh the page or contact the awards team if this continues.'
+      );
+    window.bwaVerificationExpired = () =>
+      notice(
+        'Please complete the secure verification again before continuing. Your details are still here.'
+      );
+    window.bwaVerificationComplete = () => {
+      const status = document.querySelector('[data-form-status]');
+      if (status?.dataset.verification === 'true') {
+        status.hidden = true;
+        delete status.dataset.verification;
+      }
+    };
+  })();
+</script>
 
 {
   turnstileSiteKey && (

@@ -1,6 +1,23 @@
 import { expect, test, type Page } from '@playwright/test';
 
 const reference = '4f07dbbb-f612-4f46-96db-cf8823ffc395';
+test('verification errors and expiry recover without losing form details', async ({ page }) => {
+  await prepare(page);
+  const invoke = (name: string) =>
+    page.evaluate((key) => (window as unknown as Record<string, () => unknown>)[key](), name);
+  expect(await invoke('bwaVerificationError')).toBe(true);
+  await expect(page.locator('[data-form-status]')).toContainText(
+    'Secure verification could not load'
+  );
+  await invoke('bwaVerificationComplete');
+  await expect(page.locator('[data-form-status]')).toBeHidden();
+  await invoke('bwaVerificationExpired');
+  await expect(page.locator('[data-form-status]')).toContainText('Your details are still here');
+  await expect(page.locator('#contact-name')).toHaveValue('Test Entrant');
+  await invoke('bwaVerificationComplete');
+  await expect(page.locator('[data-form-status]')).toBeHidden();
+});
+
 async function prepare(page: Page) {
   await page.route('https://challenges.cloudflare.com/turnstile/v0/api.js', (route) =>
     route.fulfill({

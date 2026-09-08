@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://bestwebsiteaward.com/"><img alt="Production website" src="https://img.shields.io/website?url=https%3A%2F%2Fbestwebsiteaward.com&up_message=live&down_message=offline&style=flat-square&label=production"></a>
-  <a href="https://astro.build/"><img alt="Astro 7" src="https://img.shields.io/badge/Astro-7.1-BC52EE?style=flat-square&logo=astro&logoColor=white"></a>
+  <a href="https://astro.build/"><img alt="Astro 7" src="https://img.shields.io/badge/Astro-7.3-BC52EE?style=flat-square&logo=astro&logoColor=white"></a>
   <a href="https://www.typescriptlang.org/"><img alt="TypeScript 6" src="https://img.shields.io/badge/TypeScript-6.0-3178C6?style=flat-square&logo=typescript&logoColor=white"></a>
   <a href="https://tailwindcss.com/"><img alt="Tailwind CSS 4" src="https://img.shields.io/badge/Tailwind_CSS-4.3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"></a>
   <a href="./LICENSE"><img alt="Proprietary license" src="https://img.shields.io/badge/License-Proprietary-111827?style=flat-square"></a>

@@ -54,6 +54,7 @@ const forget = () => {
 };
 const showStatus = (message: string, kind = 'error') => {
   if (!status) return;
+  delete status.dataset.verification;
   status.hidden = false;
   status.dataset.kind = kind;
   status.querySelector('p')!.textContent = message;
