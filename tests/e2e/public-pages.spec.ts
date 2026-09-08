@@ -201,7 +201,7 @@ test('contact page publishes official channels and completes a website enquiry',
   await expect(page.locator('.contact-application__details')).toContainText('2026');
   await expect(page.getByRole('link', { name: /Confirm on WhatsApp/ }).first()).toHaveAttribute(
     'href',
-    'https://wa.link/4f21fy'
+    'https://wa.link/qnfbkz'
   );
   await page.getByLabel('Your name *').fill('Test Entrant');
   await page.getByLabel('Work email *').fill('entrant@example.com');

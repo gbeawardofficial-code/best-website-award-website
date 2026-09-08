@@ -146,7 +146,7 @@ describe('public page content contract', () => {
 
     expect(programmeDetails.status).toBe('Entries now open');
     expect(programmeDetails.date).toBe('2026');
-    expect(programmeDetails.whatsappHref).toBe('https://wa.link/4f21fy');
+    expect(programmeDetails.whatsappHref).toBe('https://wa.link/qnfbkz');
     expect(copy).toContain('live, functional website');
     expect(copy).not.toMatch(
       /will be published|only confirmed when|when the relevant programme is open/i
