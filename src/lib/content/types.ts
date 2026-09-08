@@ -274,6 +274,6 @@ export interface HomepageContent {
     title: string;
     summary: string;
     primaryAction: NavigationItem;
-    secondaryAction: NavigationItem;
+    secondaryAction?: NavigationItem;
   };
 }

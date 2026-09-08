@@ -1,6 +1,7 @@
 dist/
 .astro/
 node_modules/
+.commandcode/
 coverage/
 playwright-report/
 test-results/

@@ -99,9 +99,9 @@ describe('public page content contract', () => {
       )
     ];
 
-    expect(closingSummaries.every((summary) => !summary.includes(programmeDetails.date))).toBe(
-      true
-    );
+    expect(
+      closingSummaries.every((summary) => !/\b\d{1,2}\s+[A-Z][a-z]+\s+2026\b/.test(summary))
+    ).toBe(true);
   });
 
   it('keeps managed editorial images accessible and item identifiers unique per page', () => {
@@ -136,8 +136,8 @@ describe('public page content contract', () => {
     expect(editorialPages.standard.seo.title).toContain('Best Web 2026');
     expect(JSON.stringify(utilityPages.faq)).toContain(programmeDetails.date);
     expect(utilityPages.faq.action).toEqual({
-      label: 'Confirm fee on WhatsApp',
-      href: programmeDetails.whatsappHref
+      label: 'Nominate a website',
+      href: '/contact#nomination-form'
     });
   });
 

@@ -17,7 +17,7 @@ const { content } = Astro.props;
     </div>
     <div class="closing-section__actions" data-reveal>
       <ButtonLink {...content.primaryAction} variant="primary" />
-      <ButtonLink {...content.secondaryAction} variant="text" />
+      {content.secondaryAction && <ButtonLink {...content.secondaryAction} variant="text" />}
     </div>
   </div>
 </section>

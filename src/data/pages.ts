@@ -607,7 +607,7 @@ export const utilityPages = {
         ]
       }
     ],
-    action: { label: 'Confirm fee on WhatsApp', href: programmeDetails.whatsappHref }
+    action: { label: 'Nominate a website', href: '/contact#nomination-form' }
   },
   faq: {
     slug: 'faq',
@@ -785,7 +785,7 @@ export const utilityPages = {
         ]
       }
     ],
-    action: { label: 'Confirm fee on WhatsApp', href: programmeDetails.whatsappHref }
+    action: { label: 'Nominate a website', href: '/contact#nomination-form' }
   },
   privacy: {
     slug: 'privacy-policy',
@@ -887,7 +887,7 @@ export const utilityPages = {
         ]
       }
     ],
-    action: { label: 'Confirm fee on WhatsApp', href: programmeDetails.whatsappHref }
+    action: { label: 'Nominate a website', href: '/contact#nomination-form' }
   },
   cookies: {
     slug: 'cookies',

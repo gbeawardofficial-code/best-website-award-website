@@ -173,8 +173,7 @@ export const homepageContent = {
   },
   closing: {
     title: 'Present your website for 2026.',
-    summary: `${programmeDetails.status} for the 2026 programme. ${programmeDetails.feeGuidance}`,
-    primaryAction: { label: 'Apply now', href: '/contact' },
-    secondaryAction: { label: 'Confirm fee on WhatsApp', href: programmeDetails.whatsappHref }
+    summary: `${programmeDetails.status} for the 2026 programme.`,
+    primaryAction: { label: 'Apply now', href: '/contact' }
   }
 } satisfies HomepageContent;
