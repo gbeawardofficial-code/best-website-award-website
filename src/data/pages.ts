@@ -835,7 +835,8 @@ export const utilityPages = {
       {
         title: 'Nomination payments',
         body: [
-          'For paid nominations, we securely store your submitted details, nomination reference, payment amount, transaction reference and processing status. This allows us to confirm payment, deliver your nomination and resolve interrupted submissions.',
+          'When you continue from the nomination form to the payment popup, your submitted contact and website details are saved securely and emailed to the awards team as an unpaid nomination enquiry. This allows the team to respond if you leave before paying. Opening the popup does not confirm a nomination or take payment.',
+          'If you proceed with payment, we also store the nomination reference, payment amount, transaction reference and processing status. This allows us to confirm payment, deliver your nomination and resolve interrupted submissions.',
           'Card payments are handled on Genie Business’s hosted checkout. We do not collect or store card numbers, security codes or banking passwords. Essential session cookies connect your browser to its nomination for up to seven days.',
           'Nomination details are encrypted in our database. Records are retained for programme administration, payment enquiries and applicable record-keeping obligations. Contact info@gbeaward.com to ask about access or deletion.'
         ]

@@ -26,6 +26,9 @@ async function prepare(page: Page) {
     })
   );
   await page.route('**/api/nomination/session', (route) => route.fulfill({ json: { ok: true } }));
+  await page.route('**/api/nomination/lead', (route) =>
+    route.fulfill({ json: { ok: true, captured: true } })
+  );
   await page.goto('/contact');
   await page.locator('#contact-name').fill('Test Entrant');
   await page.locator('#contact-email').fill('entrant@example.com');
@@ -86,6 +89,53 @@ test('nomination starts checkout only after explicit fee agreement', async ({ pa
   await page.getByRole('button', { name: 'Pay Rs. 2,850 by card' }).click();
   await expect(page).toHaveURL('https://transaction.uat.geniebiz.lk/test-checkout');
   expect(started).toBe(1);
+});
+
+test('opening and dismissing payment saves one unpaid lead without starting checkout', async ({
+  page
+}) => {
+  await prepare(page);
+  let leads = 0;
+  let starts = 0;
+  await page.route('**/api/nomination/lead', async (route) => {
+    leads++;
+    expect(route.request().postData()).toContain('entrant@example.com');
+    expect(route.request().postData()).toContain('Example Studio');
+    await route.fulfill({ json: { ok: true, captured: true } });
+  });
+  await page.route('**/api/nomination/start', () => {
+    starts++;
+  });
+  await page.getByRole('button', { name: 'Continue nomination' }).click();
+  await expect.poll(() => leads).toBe(1);
+  await expect(page.locator('[data-payment-feedback]')).toBeHidden();
+  await page.getByRole('button', { name: 'Back to your details' }).click();
+  await page.getByRole('button', { name: 'Continue nomination' }).click();
+  await expect(page.locator('[data-payment-feedback]')).toBeHidden();
+  expect(leads).toBe(1);
+  expect(starts).toBe(0);
+});
+
+test('lead storage failure keeps card payment disabled and supports retry', async ({ page }) => {
+  await prepare(page);
+  await page.route('**/api/nomination/lead', (route) =>
+    route.fulfill({
+      status: 503,
+      json: { ok: false, message: 'We could not save your details. Please try again.' }
+    })
+  );
+  await page.getByRole('button', { name: 'Continue nomination' }).click();
+  await expect(page.locator('[data-payment-feedback]')).toContainText('could not save');
+  await page.locator('[data-payment-agreement]').check();
+  await expect(page.locator('[data-pay-card]')).toBeDisabled();
+  await page.getByRole('button', { name: 'Back to your details' }).click();
+  await expect(page.locator('#contact-name')).toHaveValue('Test Entrant');
+  await page.route('**/api/nomination/lead', (route) =>
+    route.fulfill({ json: { ok: true, captured: true } })
+  );
+  await page.getByRole('button', { name: 'Continue nomination' }).click();
+  await page.locator('[data-payment-agreement]').check();
+  await expect(page.locator('[data-pay-card]')).toBeEnabled();
 });
 
 test('paid nomination confirmation offers another submission and stays noindex', async ({

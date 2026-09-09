@@ -7,10 +7,15 @@ Best Website Awards charges a one-time **LKR 2,850** online nomination fee per w
 - `/contact` renders the form and accessible fee dialog as static HTML.
 - `/api/contact` accepts general enquiries and rejects unpaid nominations with HTTP 402.
 - `POST /api/nomination/session` creates a seven-day, HttpOnly, SameSite=Lax browser capability cookie.
+- `POST /api/nomination/lead` saves encrypted form details and sends an internal unpaid lead email when the payment popup opens. It requires the form's privacy acceptance, the browser session and Turnstile verification. It does not create a payment or confirm a nomination.
 - `POST /api/nomination/start` validates the form, fee acceptance and Turnstile, saves encrypted nomination details, then creates one Genie transaction.
 - `/nomination-status` is a static, non-indexable page. It checks a session-authorised status API, not URL payment claims.
 - `POST /api/nomination/webhook` validates the Genie signature, retrieves the authoritative transaction, and processes confirmed nominations even if the browser has closed.
 - `GET /api/nomination/reconcile` is a secret-protected recovery endpoint, called once daily by Vercel Cron and available for manual operations.
+
+An unpaid lead uses the same reference as its later payment. Its email is explicitly labelled `UNPAID nomination lead` and contains the first captured form details. Reopening the popup does not send another email. A later paid confirmation remains a separate email with the matching submission ID. Do not treat an old lead email as evidence that a payment is still unpaid; check for the paid confirmation or join `bwa.nomination_leads.id` to `bwa.nomination_payments.id` for current status.
+
+Lead capture consumes the single-use Turnstile token. Payment start accepts that saved verification only for the exact same details, browser owner and payment environment, within 30 minutes. Changed details or an expired verification require a fresh Turnstile check. Lead emails use a separate durable delivery lease and Resend idempotency key. Temporary email failures do not block checkout after the details have been saved. Daily recovery retries at most five lead deliveries and skips confirmed or review-state payments. As with paid email, an uncertain first attempt older than 23 hours requires manual review to avoid duplicate delivery.
 
 Public pages do not query Neon. Payment APIs use the Neon HTTP driver and short atomic queries, with no database transaction held open during provider requests. Images remain build-time assets. Payment API responses and the status page use `no-store` and `noindex`.
 
@@ -46,7 +51,7 @@ npm run verify
 npm run test:e2e
 ```
 
-The migration creates only `bwa.nomination_payments` and its indexes. It does not alter another application’s schema. Run it once against the target database before enabling payments; it is safe to rerun.
+The migration creates only `bwa.nomination_payments`, `bwa.nomination_leads` and their indexes. It does not alter another application’s schema. Run it once against the target database before enabling payments; it is safe to rerun. Existing installations must run it again to add the lead table before releasing lead capture. No new environment variables are required.
 
 After the owner deploys:
 

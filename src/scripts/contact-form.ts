@@ -19,6 +19,32 @@ const turnstile = () =>
 let busy = false;
 let sessionReady = false;
 let sessionRequest: Promise<void> | undefined;
+let leadReady = false;
+let leadRequest: Promise<void> | undefined;
+let leadCaptured = false;
+let verificationReset = false;
+
+function prepareLead(data: FormData) {
+  if (leadCaptured) return Promise.resolve();
+  if (!leadRequest)
+    leadRequest = (async () => {
+      const response = await fetch('/api/nomination/lead', {
+        method: 'POST',
+        body: data,
+        keepalive: true,
+        signal: AbortSignal.timeout(25_000)
+      });
+      const result = await response.json();
+      if (!response.ok || !result.ok || !result.captured)
+        throw new Error(
+          result.message || 'We could not save your details. Close this window and try again.'
+        );
+      leadCaptured = true;
+    })().finally(() => {
+      leadRequest = undefined;
+    });
+  return leadRequest;
+}
 
 function prepareSession() {
   if (sessionReady) return Promise.resolve();
@@ -97,6 +123,13 @@ const paymentDestination = (payment: PaymentView) => {
 if (id) id.value = crypto.randomUUID();
 update();
 select?.addEventListener('change', update);
+// Editing after capture needs a fresh token; unchanged details use their saved verification.
+form?.addEventListener('input', () => {
+  if ((leadCaptured || leadRequest) && !verificationReset) {
+    verificationReset = true;
+    turnstile();
+  }
+});
 // A previous ambiguous request is never silently converted into a second payment.
 try {
   const previous = sessionStorage.getItem('bwaPaymentReference');
@@ -118,7 +151,7 @@ dialog?.addEventListener('cancel', (event) => {
   if (busy) event.preventDefault();
 });
 agreement?.addEventListener('change', () => {
-  if (pay) pay.disabled = busy || !agreement.checked || !sessionReady;
+  if (pay) pay.disabled = busy || !agreement.checked || !sessionReady || !leadReady;
 });
 
 form?.addEventListener('submit', async (event) => {
@@ -138,19 +171,27 @@ form?.addEventListener('submit', async (event) => {
       /* Continue with server-side idempotency. */
     }
     dialog.showModal();
+    const capturedDetails = new FormData(form);
+    submit.disabled = true;
+    leadReady = false;
     agreement.checked = false;
     pay.disabled = true;
     showFeedback('Preparing secure checkout…');
     try {
       await prepareSession();
+      await prepareLead(capturedDetails);
+      leadReady = true;
       if (feedback) feedback.hidden = true;
       pay.disabled = !agreement.checked;
     } catch (error) {
+      turnstile();
       showFeedback(
         error instanceof Error
           ? error.message
           : 'Secure checkout is temporarily unavailable. Close this window and try again.'
       );
+    } finally {
+      submit.disabled = false;
     }
     return;
   }
@@ -169,6 +210,9 @@ form?.addEventListener('submit', async (event) => {
     if (!response.ok || !result.ok)
       throw new Error(result.message || 'We could not send your enquiry. Please try again.');
     form.reset();
+    leadCaptured = false;
+    leadReady = false;
+    verificationReset = false;
     if (id) id.value = crypto.randomUUID();
     showStatus(result.message, 'success');
   } catch (error) {
@@ -185,7 +229,7 @@ form?.addEventListener('submit', async (event) => {
 });
 
 pay?.addEventListener('click', async () => {
-  if (busy || !sessionReady || !agreement?.checked || !form || !id) return;
+  if (busy || !sessionReady || !leadReady || !agreement?.checked || !form || !id) return;
   busy = true;
   pay.disabled = true;
   pay.setAttribute('aria-busy', 'true');

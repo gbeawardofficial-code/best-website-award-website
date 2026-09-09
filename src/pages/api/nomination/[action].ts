@@ -7,6 +7,7 @@ import { assertPaymentEnabled, env, PaymentError } from '../../../lib/server/pay
 import { hash, newSession, validSession } from '../../../lib/server/payment-security';
 import { verifyTurnstile } from '../../../lib/server/contact-delivery';
 import { getTransaction, validWebhookSignature } from '../../../lib/server/genie';
+import { captureLead, recoverLeads, verifiedLead } from '../../../lib/server/nomination-leads';
 import {
   findPayment,
   findPaymentByTransaction,
@@ -73,23 +74,32 @@ export const POST: APIRoute = async (context) => {
         });
       return json(200, { ok: true });
     }
-    if (params.action !== 'start') return json(404, { ok: false, message: 'Not found.' });
+    if (!['start', 'lead'].includes(params.action || ''))
+      return json(404, { ok: false, message: 'Not found.' });
     assertPaymentEnabled();
     const ownerHash = owner(context);
     const form = await readForm(request);
     const parsed = parseContactSubmission(form);
     if (!parsed.data) throw new PaymentError(parsed.error || 'Check your information.', 400);
-    if (parsed.data.enquiryType !== 'present' || form.get('paymentTerms') !== PAYMENT_TERMS_VERSION)
+    if (parsed.data.enquiryType !== 'present')
+      throw new PaymentError('Use the enquiry form for general questions.', 400);
+    if (params.action === 'start' && form.get('paymentTerms') !== PAYMENT_TERMS_VERSION)
       throw new PaymentError('Confirm the nomination fee and terms to continue.', 400);
     if (parsed.data.websiteConfirmation)
       throw new PaymentError('This request could not be verified.', 400);
+    if (params.action === 'lead')
+      return json(200, {
+        ok: true,
+        ...(await captureLead(parsed.data, ownerHash, request, context.clientAddress))
+      });
     const existing = await findPayment(parsed.data.submissionId);
     if (existing)
       return json(200, {
         ok: true,
         payment: paymentView(await ownedPayment(existing.id, ownerHash))
       });
-    await verifyTurnstile(parsed.data.turnstileToken, request, context.clientAddress);
+    if (!(await verifiedLead(parsed.data, ownerHash)))
+      await verifyTurnstile(parsed.data.turnstileToken, request, context.clientAddress);
     return json(200, { ok: true, payment: await beginPayment(parsed.data, ownerHash) });
   } catch (error) {
     return apiError(error);
@@ -117,6 +127,7 @@ export const GET: APIRoute = async (context) => {
         const recovered = await deliverPaidNomination(await verifyPayment(record, transaction));
         return json(200, { ok: true, payment: paymentView(recovered) });
       }
+      const leadRecovery = recoverLeads().catch(() => ({ checked: 0, pending: 1 }));
       const candidates = await recoveryCandidates();
       let pending = 0;
       // Two bounded batches. No public page renders or polls the database.
@@ -128,7 +139,13 @@ export const GET: APIRoute = async (context) => {
           })
         );
       }
-      return json(pending ? 503 : 200, { ok: !pending, checked: candidates.length, pending });
+      const leads = await leadRecovery;
+      return json(pending || leads.pending ? 503 : 200, {
+        ok: !pending && !leads.pending,
+        checked: candidates.length,
+        pending,
+        leads
+      });
     }
     if (context.params.action !== 'status') return json(404, { ok: false, message: 'Not found.' });
     const reference = context.url.searchParams.get('reference') || '';

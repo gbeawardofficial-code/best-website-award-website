@@ -56,7 +56,8 @@ export async function verifyTurnstile(token: string, request: Request, address?:
 }
 export async function sendContactEmail(
   details: DeliveryDetails,
-  payment?: { reference: string; transactionId: string; amount: number; currency: string }
+  payment?: { reference: string; transactionId: string; amount: number; currency: string },
+  unpaidLead = false
 ): Promise<string> {
   const { submission, from, to } = details;
   const label = enquiryLabels[submission.enquiryType];
@@ -69,6 +70,18 @@ export async function sendContactEmail(
     ['Website', submission.website],
     ['Message', submission.message],
     ['Submission ID', submission.submissionId],
+    ...(unpaidLead
+      ? [
+          [
+            'Status at capture',
+            'UNPAID: payment popup opened. This is a lead, not a confirmed nomination.'
+          ],
+          [
+            'Follow-up',
+            'Check for a paid confirmation with this same submission ID before following up. Payment may have completed after this email was sent.'
+          ]
+        ]
+      : []),
     ...(payment
       ? [
           ['Payment', `CONFIRMED: ${payment.currency} ${(payment.amount / 100).toFixed(2)}`],
@@ -77,7 +90,11 @@ export async function sendContactEmail(
         ]
       : [])
   ];
-  const title = payment ? 'Paid website nomination' : 'New website enquiry';
+  const title = payment
+    ? 'Paid website nomination'
+    : unpaidLead
+      ? 'Unpaid nomination lead'
+      : 'New website enquiry';
   const response = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
@@ -85,14 +102,16 @@ export async function sendContactEmail(
       'Content-Type': 'application/json',
       'Idempotency-Key': payment
         ? `bwa-paid-${payment.reference}`
-        : `bwa-contact-${submission.submissionId}`
+        : unpaidLead
+          ? `bwa-lead-${submission.submissionId}`
+          : `bwa-contact-${submission.submissionId}`
     },
     signal: AbortSignal.timeout(5_000),
     body: JSON.stringify({
       from,
       to: [to],
       reply_to: submission.email,
-      subject: `[Best Website Awards] ${payment ? 'Paid nomination' : label}: ${submission.organisation}`,
+      subject: `[Best Website Awards] ${payment ? 'Paid nomination' : unpaidLead ? 'UNPAID nomination lead' : label}: ${submission.organisation}`,
       text: [title, '', ...rows.map(([name, value]) => `${name}: ${value || 'Not supplied'}`)].join(
         '\n'
       ),
