@@ -85,6 +85,11 @@ test('nomination starts checkout only after explicit fee agreement', async ({ pa
   );
   await page.getByRole('button', { name: 'Continue nomination' }).click();
   expect(started).toBe(0);
+  await expect(page.locator('[data-payment-feedback]')).toBeHidden();
+  // An expired widget does not lose the already verified, unchanged submission.
+  await page.locator('input[name="cf-turnstile-response"]').evaluate((input) => {
+    (input as HTMLInputElement).value = '';
+  });
   await page.getByRole('dialog').getByRole('checkbox').check();
   await page.getByRole('button', { name: 'Pay Rs. 2,850 by card' }).click();
   await expect(page).toHaveURL('https://transaction.uat.geniebiz.lk/test-checkout');

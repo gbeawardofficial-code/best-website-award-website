@@ -22,6 +22,7 @@ let sessionRequest: Promise<void> | undefined;
 let leadReady = false;
 let leadRequest: Promise<void> | undefined;
 let leadCaptured = false;
+let capturedVerificationToken = '';
 let verificationReset = false;
 
 function prepareLead(data: FormData) {
@@ -40,6 +41,7 @@ function prepareLead(data: FormData) {
           result.message || 'We could not save your details. Close this window and try again.'
         );
       leadCaptured = true;
+      capturedVerificationToken = String(data.get('cf-turnstile-response') || '');
     })().finally(() => {
       leadRequest = undefined;
     });
@@ -211,6 +213,7 @@ form?.addEventListener('submit', async (event) => {
       throw new Error(result.message || 'We could not send your enquiry. Please try again.');
     form.reset();
     leadCaptured = false;
+    capturedVerificationToken = '';
     leadReady = false;
     verificationReset = false;
     if (id) id.value = crypto.randomUUID();
@@ -236,6 +239,10 @@ pay?.addEventListener('click', async () => {
   if (close) close.disabled = true;
   showFeedback('Opening secure checkout. Please keep this window open…');
   const data = new FormData(form);
+  // The widget may clear its token while the popup is open. The server accepts
+  // the saved verification only when the complete submission still matches.
+  if (!data.get('cf-turnstile-response') && capturedVerificationToken)
+    data.set('cf-turnstile-response', capturedVerificationToken);
   data.set('paymentTerms', agreement.value);
   remember(id.value);
   try {

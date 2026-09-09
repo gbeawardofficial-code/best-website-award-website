@@ -3,11 +3,19 @@ import { POST, GET } from '../../src/pages/api/nomination/[action]';
 import * as genie from '../../src/lib/server/genie';
 import * as store from '../../src/lib/server/payment-store';
 import * as payments from '../../src/lib/server/payments';
+import * as leads from '../../src/lib/server/nomination-leads';
+import * as delivery from '../../src/lib/server/contact-delivery';
 import type { PaymentRecord } from '../../src/lib/server/payment-store';
 
 vi.mock('../../src/lib/server/genie');
 vi.mock('../../src/lib/server/payment-store');
 vi.mock('../../src/lib/server/payments');
+vi.mock('../../src/lib/server/nomination-leads');
+vi.mock('../../src/lib/server/contact-delivery');
+vi.mock('../../src/lib/server/payment-config', async (original) => ({
+  ...(await original<typeof import('../../src/lib/server/payment-config')>()),
+  assertPaymentEnabled: vi.fn()
+}));
 const reference = '4f07dbbb-f612-4f46-96db-cf8823ffc395';
 const transactionId = '65c509dcf003980008fbb808';
 const record = {
@@ -35,6 +43,54 @@ beforeEach(() => {
 afterEach(() => vi.resetAllMocks());
 
 describe('nomination endpoint boundaries', () => {
+  const formContext = (action: string, privacy = true) => {
+    const body = new FormData();
+    Object.entries({
+      submissionId: reference,
+      enquiryType: 'present',
+      name: 'Test Entrant',
+      email: 'test@example.com',
+      organisation: 'Example Studio',
+      website: 'https://example.com',
+      privacyAccepted: privacy ? 'yes' : '',
+      'cf-turnstile-response': 'token',
+      paymentTerms: '2026-09-09'
+    }).forEach(([key, value]) => body.set(key, value));
+    return {
+      params: { action },
+      request: new Request(`https://bestwebsiteaward.com/api/nomination/${action}`, {
+        method: 'POST',
+        headers: { Origin: 'https://bestwebsiteaward.com' },
+        body
+      }),
+      cookies: { get: () => ({ value: 'ab'.repeat(32) }) }
+    } as never;
+  };
+  it('captures a lead without creating a payment', async () => {
+    vi.mocked(leads.captureLead).mockResolvedValue({ captured: true });
+    const response = await POST(formContext('lead'));
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ ok: true, captured: true });
+    expect(leads.captureLead).toHaveBeenCalledTimes(1);
+    expect(payments.beginPayment).not.toHaveBeenCalled();
+  });
+  it('does not capture a lead without privacy acceptance', async () => {
+    expect((await POST(formContext('lead', false))).status).toBe(400);
+    expect(leads.captureLead).not.toHaveBeenCalled();
+  });
+  it('does not consume the single-use token again after exact lead verification', async () => {
+    vi.mocked(store.findPayment).mockResolvedValue(undefined);
+    vi.mocked(leads.verifiedLead).mockResolvedValue(true);
+    expect((await POST(formContext('start'))).status).toBe(200);
+    expect(delivery.verifyTurnstile).not.toHaveBeenCalled();
+    expect(payments.beginPayment).toHaveBeenCalledTimes(1);
+  });
+  it('requires fresh verification when a saved lead does not match', async () => {
+    vi.mocked(store.findPayment).mockResolvedValue(undefined);
+    vi.mocked(leads.verifiedLead).mockResolvedValue(false);
+    expect((await POST(formContext('start'))).status).toBe(200);
+    expect(delivery.verifyTurnstile).toHaveBeenCalledTimes(1);
+  });
   it('rejects unsigned callbacks without querying the database or provider', async () => {
     vi.mocked(genie.validWebhookSignature).mockReturnValue(false);
     const response = await POST(webhook({ transactionId, localId: reference }));
