@@ -16,6 +16,11 @@ export interface NavigationItem {
   showInHeader?: boolean;
 }
 
+export interface FooterBadgeContent {
+  quality: { image: ManagedImage };
+  tools: { image: ManagedImage; label: string; description: string }[];
+}
+
 export type SocialNetwork = 'facebook' | 'instagram' | 'x' | 'linkedin' | 'whatsapp';
 
 export interface SocialLink {

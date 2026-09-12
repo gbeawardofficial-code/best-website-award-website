@@ -1,0 +1,34 @@
+---
+import { getFooterBadges } from '../lib/content/footer';
+import ManagedPicture from './ManagedPicture.astro';
+const content = await getFooterBadges();
+---
+
+<div class="container" id="footer-badges">
+  <div
+    class="tw:flex tw:flex-wrap tw:items-center tw:justify-between tw:gap-8 tw:border-t tw:border-white/15 tw:py-8"
+  >
+    <div class="tw:block tw:w-28 tw:shrink-0">
+      <ManagedPicture
+        image={content.quality.image}
+        class="tw:block tw:h-auto tw:w-full"
+        widths={[112, 224, 336]}
+        sizes="112px"
+        quality={90}
+      />
+    </div>
+    <div role="group" aria-label="Website tools" class="tw:flex tw:min-w-0 tw:flex-wrap tw:gap-3">
+      {
+        content.tools.map((item) => (
+          <div class="tw:flex tw:min-h-20 tw:w-full tw:items-center tw:gap-4 tw:rounded-lg tw:border tw:border-white/15 tw:bg-white/[.035] tw:px-5 tw:py-4 tw:sm:w-auto">
+            <ManagedPicture image={item.image} class="tw:size-8 tw:shrink-0 tw:object-contain" />
+            <span class="tw:grid tw:gap-1">
+              <span class="tw:text-[.85rem] tw:font-semibold tw:text-white">{item.label}</span>
+              <span class="tw:text-[.7rem] tw:text-white/60">{item.description}</span>
+            </span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>

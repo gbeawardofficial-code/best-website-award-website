@@ -3,6 +3,7 @@ import type { NavigationItem } from '../lib/content/types';
 import { contactDetails, socialLinks } from '../data/site';
 import BrandLogo from './BrandLogo.astro';
 import SocialIcon from './SocialIcon.astro';
+import FooterBadges from './FooterBadges.astro';
 
 interface Props {
   navigation: NavigationItem[];
@@ -80,6 +81,7 @@ const year = new Date().getFullYear();
       </nav>
     </div>
   </div>
+  <FooterBadges />
   {
     legalNavigation.length > 0 && (
       <nav class="container site-footer__legal" aria-label="Legal and contact navigation">

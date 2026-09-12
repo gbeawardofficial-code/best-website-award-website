@@ -136,7 +136,10 @@ test('UKQAB quality recognition has a responsive badge and accessible official l
   await section.evaluate((el) => el.scrollIntoView({ block: 'start', behavior: 'instant' }));
   await section.screenshot({
     path: `/tmp/bwa-ukqab-${testInfo.project.name}.png`,
-    animations: 'disabled'
+    animations: 'disabled',
+    // Keep fixed navigation and development controls out of this section-only capture.
+    // Their normal mobile behaviour is covered by the full-page tests above.
+    style: '.site-header, .skip-link, astro-dev-toolbar { visibility: hidden !important; }'
   });
   expect(errors).toEqual([]);
 });
