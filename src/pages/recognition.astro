@@ -5,6 +5,7 @@ import EventGallery from '../components/EventGallery.astro';
 import RecognitionFramework from '../components/RecognitionFramework.astro';
 import RecognitionHero from '../components/RecognitionHero.astro';
 import RecognitionRecord from '../components/RecognitionRecord.astro';
+import RecognitionQuality from '../components/RecognitionQuality.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import { contactDetails, legalNavigation, siteNavigation } from '../data/site';
@@ -18,7 +19,11 @@ const content = await getRecognitionContent();
 const primaryImage = resolveManagedImage(content.hero.image, Astro.site);
 const frameworkLogos = content.framework.items.map((item) => item.logo);
 const structuredImages = resolveManagedImages(
-  [...frameworkLogos, ...content.gallery.items.map((item) => item.image)],
+  [
+    ...frameworkLogos,
+    content.qualityRecognition.image,
+    ...content.gallery.items.map((item) => item.image)
+  ],
   Astro.site
 );
 const structuredOrganizations = content.framework.items.map((item) => ({
@@ -48,6 +53,7 @@ const structuredOrganizations = content.framework.items.map((item) => ({
     <RecognitionHero content={content.hero} />
     <EditorialIntroduction content={content.introduction} />
     <RecognitionFramework content={content.framework} />
+    <RecognitionQuality content={content.qualityRecognition} />
     <EventGallery content={content.gallery} id="recognition-in-action" />
     <RecognitionRecord content={content.record} />
     <EditorialClosing content={content.closing} />

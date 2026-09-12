@@ -101,7 +101,44 @@ test('recognition page publishes four distinct roles, authentic imagery and matc
 
   expect(recognitionList?.numberOfItems).toBe(4);
   expect(recognitionList?.itemListElement).toHaveLength(4);
-  expect(imageNodes).toHaveLength(8);
+  expect(imageNodes).toHaveLength(9);
+});
+
+test('UKQAB quality recognition has a responsive badge and accessible official link', async ({
+  page
+}, testInfo) => {
+  const errors: string[] = [];
+  page.on('pageerror', (error) => errors.push(error.message));
+  await page.goto('/recognition');
+  const section = page.locator('#quality-recognition');
+  const consentDismiss = page.getByRole('button', { name: 'Not now', exact: true });
+  if (await consentDismiss.isVisible()) {
+    await consentDismiss.focus();
+    await consentDismiss.press('Enter');
+  }
+  await section.scrollIntoViewIfNeeded();
+  await expect(section.getByRole('heading', { name: 'UKQAB Quality Approved' })).toBeVisible();
+  const badge = section.getByRole('img', {
+    name: 'UKQAB Quality Approved badge, independently assessed'
+  });
+  await expect(badge).toHaveAttribute('loading', 'lazy');
+  await expect(badge).toHaveAttribute('srcset', /240w.*360w.*480w.*720w/);
+  await expect
+    .poll(() => badge.evaluate((img) => (img as HTMLImageElement).naturalWidth))
+    .toBeGreaterThan(0);
+  const link = section.getByRole('link', { name: /Explore UKQAB/ });
+  await expect(link).toHaveAttribute('href', 'https://ukqab.org.uk/');
+  await expect(link).toHaveAttribute('rel', 'external noopener noreferrer');
+  await link.focus();
+  await expect(link).toBeFocused();
+  await link.evaluate((el) => (el as HTMLElement).blur());
+  expect(await section.evaluate((el) => el.scrollWidth <= el.clientWidth)).toBe(true);
+  await section.evaluate((el) => el.scrollIntoView({ block: 'start', behavior: 'instant' }));
+  await section.screenshot({
+    path: `/tmp/bwa-ukqab-${testInfo.project.name}.png`,
+    animations: 'disabled'
+  });
+  expect(errors).toEqual([]);
 });
 
 test('FAQ publishes complete visible answers and matching structured data', async ({ page }) => {

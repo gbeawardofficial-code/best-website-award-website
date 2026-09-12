@@ -7,6 +7,7 @@ import recognitionGlassAward from '../assets/recognition/recognition-glass-award
 import recognitionRecipient from '../assets/recognition/recognition-recipient.webp';
 import recognitionVenue from '../assets/recognition/recognition-venue.webp';
 import sitcCampusLogo from '../assets/recognition/sitc-campus-logo.webp';
+import ukqabQualityBadge from '../assets/recognition/ukqab-quality-approved-badge.png';
 import type { RecognitionPageContent } from '../lib/content/types';
 import { programmeDetails } from './site';
 
@@ -15,7 +16,7 @@ export const recognitionPageContent = {
   seo: {
     title: 'Recognition Framework | Best Website Awards 2026',
     description:
-      'Explore the four-part recognition framework behind Best Website Awards 2026, including GBE Awards, DEC, SITC Campus Business Faculty and the UK organiser.',
+      'Explore Best Website Awards 2026 recognition, the GBE Awards framework and UKQAB Quality Approved, with each organisation’s role clearly explained.',
     pageType: 'CollectionPage'
   },
   hero: {
@@ -111,6 +112,17 @@ export const recognitionPageContent = {
         logoPresentation: 'wide-dark'
       }
     ]
+  },
+  qualityRecognition: {
+    eyebrow: 'Independent quality assessment',
+    title: 'UKQAB Quality Approved',
+    summary:
+      'The UK Quality Assessment Board provides independent quality assessment and certification for organisations, programmes and services. Its framework brings quality practices, supporting evidence and continuous improvement into focus.',
+    image: {
+      src: ukqabQualityBadge,
+      alt: 'UKQAB Quality Approved badge, independently assessed'
+    },
+    action: { label: 'Explore UKQAB', href: 'https://ukqab.org.uk/' }
   },
   gallery: {
     title: 'Recognition in action',

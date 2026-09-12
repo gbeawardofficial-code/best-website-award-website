@@ -67,6 +67,9 @@ describe('public page content contract', () => {
     ]);
     expect(recognition.gallery.items).toHaveLength(4);
     expect(recognition.framework.items.every((item) => item.logo.alt.trim().length > 0)).toBe(true);
+    expect(recognition.qualityRecognition.title).toBe('UKQAB Quality Approved');
+    expect(recognition.qualityRecognition.action.href).toBe('https://ukqab.org.uk/');
+    expect(recognition.qualityRecognition.image.alt).toContain('UKQAB');
   });
 
   it('gives every ceremony photograph one deliberate public placement', () => {

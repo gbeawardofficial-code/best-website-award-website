@@ -1,0 +1,60 @@
+---
+import { ArrowUpRight } from '@lucide/astro';
+import type { RecognitionPageContent } from '../lib/content/types';
+import ManagedPicture from './ManagedPicture.astro';
+
+interface Props {
+  content: RecognitionPageContent['qualityRecognition'];
+}
+const { content } = Astro.props;
+---
+
+<section
+  id="quality-recognition"
+  aria-labelledby="quality-recognition-title"
+  class="tw:bg-white tw:py-[clamp(4.5rem,8vw,8rem)]"
+>
+  <div class="container">
+    <div
+      class="tw:grid tw:min-w-0 tw:gap-10 tw:border-t tw:border-carbon tw:pt-10 tw:lg:grid-cols-[minmax(0,1fr)_minmax(0,.65fr)] tw:lg:items-center tw:lg:gap-20"
+      data-reveal-group
+    >
+      <div class="tw:flex tw:min-w-0 tw:flex-col tw:items-start tw:gap-6" data-reveal>
+        <p class="tw:text-[.68rem] tw:font-bold tw:tracking-[.14em] tw:text-lapis tw:uppercase">
+          {content.eyebrow}
+        </p>
+        <h2
+          id="quality-recognition-title"
+          class="tw:max-w-[15ch] tw:text-[clamp(2.5rem,5vw,4.6rem)]"
+        >
+          {content.title}
+        </h2>
+        <p class="tw:max-w-[36rem] tw:text-[1.05rem] tw:leading-[1.7] tw:text-ink-soft">
+          {content.summary}
+        </p>
+        <a
+          href={content.action.href}
+          target="_blank"
+          rel="external noopener noreferrer"
+          class="tw:inline-flex tw:min-h-11 tw:items-center tw:gap-3 tw:border-b tw:border-lapis tw:pb-1 tw:font-semibold tw:text-lapis tw:transition-colors tw:hover:text-lapis-deep"
+        >
+          {content.action.label}
+          <span class="tw:sr-only"> (opens in a new tab)</span>
+          <ArrowUpRight size={19} stroke-width={1.7} aria-hidden="true" />
+        </a>
+      </div>
+      <div
+        class="tw:w-full tw:max-w-[20rem] tw:justify-self-center tw:lg:max-w-[22.5rem]"
+        data-reveal
+      >
+        <ManagedPicture
+          image={content.image}
+          class="tw:block tw:h-auto tw:w-full tw:object-contain"
+          widths={[240, 360, 480, 720]}
+          sizes="(min-width: 1024px) 360px, (min-width: 400px) 320px, 80vw"
+          quality={90}
+        />
+      </div>
+    </div>
+  </div>
+</section>

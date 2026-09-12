@@ -162,9 +162,9 @@ for (const route of indexableRoutes) {
       recognitionList?.numberOfItems !== 4 ||
       recognitionList?.itemListElement?.length !== 4 ||
       !recognitionNames.every((name) => organizationNames.includes(name)) ||
-      recognitionImages.length !== 8
+      recognitionImages.length !== 9
     ) {
-      fail('/recognition structured data does not match the four roles and eight visible images');
+      fail('/recognition structured data does not match the four roles and nine visible images');
     }
   }
 }

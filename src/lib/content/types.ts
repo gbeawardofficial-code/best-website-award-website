@@ -215,6 +215,13 @@ export interface RecognitionPageContent {
   seo: PageSeo;
   hero: EditorialPageContent['hero'];
   introduction: EditorialPageContent['introduction'];
+  qualityRecognition: {
+    eyebrow: string;
+    title: string;
+    summary: string;
+    image: ManagedImage;
+    action: NavigationItem;
+  };
   framework: {
     title: string;
     summary: string;
