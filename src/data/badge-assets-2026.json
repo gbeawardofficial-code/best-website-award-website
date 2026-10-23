@@ -1,0 +1,3341 @@
+{
+  "year": 2026,
+  "version": "b85ed2b19de8",
+  "prefix": "/winner-resources/2026/b85ed2b19de8",
+  "winners": {
+    "accronautobot.com": {
+      "website": "accronautobot.com",
+      "websiteUrl": "https://accronautobot.com",
+      "award": "Best Software Solutions Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-light-480w.webp",
+                "alt": "Best Software Solutions Website, accronautobot.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-dark-480w.webp",
+                "alt": "Best Software Solutions Website, accronautobot.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-light-1200w.webp",
+                "alt": "Best Software Solutions Website, accronautobot.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-dark-1200w.webp",
+                "alt": "Best Software Solutions Website, accronautobot.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/accronautobot.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ceylonenvoy.com": {
+      "website": "ceylonenvoy.com",
+      "websiteUrl": "https://ceylonenvoy.com/",
+      "award": "Best Luxury Travel Website",
+      "developer": "Augmara",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-light-480w.webp",
+                "alt": "Best Luxury Travel Website, ceylonenvoy.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-dark-480w.webp",
+                "alt": "Best Luxury Travel Website, ceylonenvoy.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-light-1200w.webp",
+                "alt": "Best Luxury Travel Website, ceylonenvoy.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-dark-1200w.webp",
+                "alt": "Best Luxury Travel Website, ceylonenvoy.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "developer",
+          "name": "Augmara",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-light-480w.webp",
+                "alt": "Augmara developer recognition, Best Luxury Travel Website, ceylonenvoy.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-dark-480w.webp",
+                "alt": "Augmara developer recognition, Best Luxury Travel Website, ceylonenvoy.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-light-1200w.webp",
+                "alt": "Augmara developer recognition, Best Luxury Travel Website, ceylonenvoy.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-dark-1200w.webp",
+                "alt": "Augmara developer recognition, Best Luxury Travel Website, ceylonenvoy.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ceylonenvoy.com/developer/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "angelcurveglobal.com": {
+      "website": "angelcurveglobal.com",
+      "websiteUrl": "http://www.angelcurveglobal.com/",
+      "award": "Best Beauty Studio Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-light-480w.webp",
+                "alt": "Best Beauty Studio Website, angelcurveglobal.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-dark-480w.webp",
+                "alt": "Best Beauty Studio Website, angelcurveglobal.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-light-1200w.webp",
+                "alt": "Best Beauty Studio Website, angelcurveglobal.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-dark-1200w.webp",
+                "alt": "Best Beauty Studio Website, angelcurveglobal.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/angelcurveglobal.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "blackrosebeautyglobal.com": {
+      "website": "blackrosebeautyglobal.com",
+      "websiteUrl": "http://www.blackrosebeautyglobal.com/",
+      "award": "Best Cosmetology Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-light-480w.webp",
+                "alt": "Best Cosmetology Website, blackrosebeautyglobal.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-dark-480w.webp",
+                "alt": "Best Cosmetology Website, blackrosebeautyglobal.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-light-1200w.webp",
+                "alt": "Best Cosmetology Website, blackrosebeautyglobal.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-dark-1200w.webp",
+                "alt": "Best Cosmetology Website, blackrosebeautyglobal.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/blackrosebeautyglobal.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "resume-x.app": {
+      "website": "resume-x.app",
+      "websiteUrl": "https://resume-x.app",
+      "award": "Best AI Resume Builder Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-light-480w.webp",
+                "alt": "Best AI Resume Builder Website, resume-x.app, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-dark-480w.webp",
+                "alt": "Best AI Resume Builder Website, resume-x.app, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-light-1200w.webp",
+                "alt": "Best AI Resume Builder Website, resume-x.app, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-dark-1200w.webp",
+                "alt": "Best AI Resume Builder Website, resume-x.app, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/resume-x.app/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "imperialteasgroup.com": {
+      "website": "imperialteasgroup.com",
+      "websiteUrl": "https://www.imperialteasgroup.com",
+      "award": "Best Tea Exporter Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-light-480w.webp",
+                "alt": "Best Tea Exporter Website, imperialteasgroup.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-dark-480w.webp",
+                "alt": "Best Tea Exporter Website, imperialteasgroup.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-light-1200w.webp",
+                "alt": "Best Tea Exporter Website, imperialteasgroup.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-dark-1200w.webp",
+                "alt": "Best Tea Exporter Website, imperialteasgroup.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/imperialteasgroup.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "rs.lk": {
+      "website": "rs.lk",
+      "websiteUrl": "https://www.rs.lk",
+      "award": "Best Steel Manufacturing Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-light-480w.webp",
+                "alt": "Best Steel Manufacturing Website, rs.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-dark-480w.webp",
+                "alt": "Best Steel Manufacturing Website, rs.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-light-1200w.webp",
+                "alt": "Best Steel Manufacturing Website, rs.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-dark-1200w.webp",
+                "alt": "Best Steel Manufacturing Website, rs.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/rs.lk/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "linzzotopup.com": {
+      "website": "linzzotopup.com",
+      "websiteUrl": "https://linzzotopup.com/",
+      "award": "Best Gaming Top-up Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-light-480w.webp",
+                "alt": "Best Gaming Top-up Website, linzzotopup.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-dark-480w.webp",
+                "alt": "Best Gaming Top-up Website, linzzotopup.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-light-1200w.webp",
+                "alt": "Best Gaming Top-up Website, linzzotopup.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-dark-1200w.webp",
+                "alt": "Best Gaming Top-up Website, linzzotopup.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/linzzotopup.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sincap.cc": {
+      "website": "sincap.cc",
+      "websiteUrl": "https://sincap.cc/",
+      "award": "Best Sinhala Content Creation Platform",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-light-480w.webp",
+                "alt": "Best Sinhala Content Creation Platform, sincap.cc, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-dark-480w.webp",
+                "alt": "Best Sinhala Content Creation Platform, sincap.cc, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-light-1200w.webp",
+                "alt": "Best Sinhala Content Creation Platform, sincap.cc, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-dark-1200w.webp",
+                "alt": "Best Sinhala Content Creation Platform, sincap.cc, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sincap.cc/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ognos.lk": {
+      "website": "ognos.lk",
+      "websiteUrl": "https://www.ognos.lk/",
+      "award": "Best Chemical Manufacturing Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-light-480w.webp",
+                "alt": "Best Chemical Manufacturing Website, ognos.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-dark-480w.webp",
+                "alt": "Best Chemical Manufacturing Website, ognos.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-light-1200w.webp",
+                "alt": "Best Chemical Manufacturing Website, ognos.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-dark-1200w.webp",
+                "alt": "Best Chemical Manufacturing Website, ognos.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/ognos.lk/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "kikibeauty.lk": {
+      "website": "kikibeauty.lk",
+      "websiteUrl": "https://kikibeauty.lk/",
+      "award": "Best Beauty Retail E-commerce Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-light-480w.webp",
+                "alt": "Best Beauty Retail E-commerce Website, kikibeauty.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-dark-480w.webp",
+                "alt": "Best Beauty Retail E-commerce Website, kikibeauty.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-light-1200w.webp",
+                "alt": "Best Beauty Retail E-commerce Website, kikibeauty.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-dark-1200w.webp",
+                "alt": "Best Beauty Retail E-commerce Website, kikibeauty.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/kikibeauty.lk/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "captureeye.com": {
+      "website": "captureeye.com",
+      "websiteUrl": "https://www.captureeye.com/",
+      "award": "Best Video Production Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-light-480w.webp",
+                "alt": "Best Video Production Website, captureeye.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-dark-480w.webp",
+                "alt": "Best Video Production Website, captureeye.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-light-1200w.webp",
+                "alt": "Best Video Production Website, captureeye.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-dark-1200w.webp",
+                "alt": "Best Video Production Website, captureeye.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/captureeye.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "percs.lk": {
+      "website": "percs.lk",
+      "websiteUrl": "https://www.percs.lk/",
+      "award": "Best Enterprise Software Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-light-480w.webp",
+                "alt": "Best Enterprise Software Website, percs.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-dark-480w.webp",
+                "alt": "Best Enterprise Software Website, percs.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-light-1200w.webp",
+                "alt": "Best Enterprise Software Website, percs.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-dark-1200w.webp",
+                "alt": "Best Enterprise Software Website, percs.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/percs.lk/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "tharinduhettiarachchi.com": {
+      "website": "tharinduhettiarachchi.com",
+      "websiteUrl": "https://www.tharinduhettiarachchi.com/",
+      "award": "Best Tax Consultancy Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-light-480w.webp",
+                "alt": "Best Tax Consultancy Website, tharinduhettiarachchi.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-dark-480w.webp",
+                "alt": "Best Tax Consultancy Website, tharinduhettiarachchi.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-light-1200w.webp",
+                "alt": "Best Tax Consultancy Website, tharinduhettiarachchi.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-dark-1200w.webp",
+                "alt": "Best Tax Consultancy Website, tharinduhettiarachchi.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/tharinduhettiarachchi.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "zonova.lk": {
+      "website": "zonova.lk",
+      "websiteUrl": "https://zonova.lk",
+      "award": "Best Online Gifting Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-light-480w.webp",
+                "alt": "Best Online Gifting Website, zonova.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-dark-480w.webp",
+                "alt": "Best Online Gifting Website, zonova.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-light-1200w.webp",
+                "alt": "Best Online Gifting Website, zonova.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-dark-1200w.webp",
+                "alt": "Best Online Gifting Website, zonova.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/zonova.lk/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hobbymart.lk": {
+      "website": "hobbymart.lk",
+      "websiteUrl": "https://hobbymart.lk",
+      "award": "Best Hobby Retail E-commerce Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-light-480w.webp",
+                "alt": "Best Hobby Retail E-commerce Website, hobbymart.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-dark-480w.webp",
+                "alt": "Best Hobby Retail E-commerce Website, hobbymart.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-light-1200w.webp",
+                "alt": "Best Hobby Retail E-commerce Website, hobbymart.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-dark-1200w.webp",
+                "alt": "Best Hobby Retail E-commerce Website, hobbymart.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/hobbymart.lk/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "monarch-jewellers.com": {
+      "website": "monarch-jewellers.com",
+      "websiteUrl": "https://monarch-jewellers.com/",
+      "award": "Best Jewellery Retail Website",
+      "developer": "DEGITALDEVS",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-light-480w.webp",
+                "alt": "Best Jewellery Retail Website, monarch-jewellers.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-dark-480w.webp",
+                "alt": "Best Jewellery Retail Website, monarch-jewellers.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-light-1200w.webp",
+                "alt": "Best Jewellery Retail Website, monarch-jewellers.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-dark-1200w.webp",
+                "alt": "Best Jewellery Retail Website, monarch-jewellers.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "developer",
+          "name": "DEGITALDEVS",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-light-480w.webp",
+                "alt": "DEGITALDEVS developer recognition, Best Jewellery Retail Website, monarch-jewellers.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-dark-480w.webp",
+                "alt": "DEGITALDEVS developer recognition, Best Jewellery Retail Website, monarch-jewellers.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-light-1200w.webp",
+                "alt": "DEGITALDEVS developer recognition, Best Jewellery Retail Website, monarch-jewellers.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-dark-1200w.webp",
+                "alt": "DEGITALDEVS developer recognition, Best Jewellery Retail Website, monarch-jewellers.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/monarch-jewellers.com/developer/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sayora.lk": {
+      "website": "sayora.lk",
+      "websiteUrl": "https://sayora.lk/",
+      "award": "Best Wellness Centre Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-light-480w.webp",
+                "alt": "Best Wellness Centre Website, sayora.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-dark-480w.webp",
+                "alt": "Best Wellness Centre Website, sayora.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-light-1200w.webp",
+                "alt": "Best Wellness Centre Website, sayora.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-dark-1200w.webp",
+                "alt": "Best Wellness Centre Website, sayora.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/sayora.lk/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "batteryhouse.lk": {
+      "website": "batteryhouse.lk",
+      "websiteUrl": "https://batteryhouse.lk",
+      "award": "Best Battery Retail E-commerce Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-light-480w.webp",
+                "alt": "Best Battery Retail E-commerce Website, batteryhouse.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-dark-480w.webp",
+                "alt": "Best Battery Retail E-commerce Website, batteryhouse.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-light-1200w.webp",
+                "alt": "Best Battery Retail E-commerce Website, batteryhouse.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-dark-1200w.webp",
+                "alt": "Best Battery Retail E-commerce Website, batteryhouse.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/batteryhouse.lk/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "spiceswijay.com": {
+      "website": "spiceswijay.com",
+      "websiteUrl": "https://spiceswijay.com/",
+      "award": "Best Food Manufacturing Website",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-light-480w.webp",
+                "alt": "Best Food Manufacturing Website, spiceswijay.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-dark-480w.webp",
+                "alt": "Best Food Manufacturing Website, spiceswijay.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-light-1200w.webp",
+                "alt": "Best Food Manufacturing Website, spiceswijay.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-dark-1200w.webp",
+                "alt": "Best Food Manufacturing Website, spiceswijay.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

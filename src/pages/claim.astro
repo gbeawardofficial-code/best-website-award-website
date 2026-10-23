@@ -1,0 +1,197 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BrandLogo from '../components/BrandLogo.astro';
+import ManagedPicture from '../components/ManagedPicture.astro';
+import { ArrowRight, Download, X } from '@lucide/astro';
+import { brandMetadata } from '../data/brand';
+import { getClaimContent } from '../lib/content/claim';
+import '../styles/claim.css';
+
+export const prerender = true;
+const { variants, ...copy } = await getClaimContent();
+---
+
+<BaseLayout
+  title={copy.seo.title}
+  description={copy.seo.description}
+  image={new URL(brandMetadata.logo, Astro.site)}
+  imageWidth={brandMetadata.logoWidth}
+  imageHeight={brandMetadata.logoHeight}
+  noIndex
+  disableAnalytics
+>
+  <div class="claim-shell" data-claim>
+    <header class="claim-header">
+      <a href="/" aria-label="Best Website Awards home"><BrandLogo /></a>
+      <span>{copy.headerLabel}</span>
+    </header>
+    <main id="main-content" class="claim-main">
+      <div class="claim-intro">
+        <h1 data-claim-title tabindex="-1">{copy.lookupTitle}</h1>
+        <p data-claim-summary>{copy.lookupSummary}</p>
+      </div>
+      <p class="claim-error" data-claim-error role="alert" hidden></p>
+      <section data-claim-panel="lookup" class="claim-lookup" aria-label="Find your winner badges">
+        <form data-claim-form>
+          <label for="claim-website">{copy.websiteLabel}</label>
+          <input
+            id="claim-website"
+            name="website"
+            type="text"
+            inputmode="url"
+            autocomplete="url"
+            placeholder="yourwebsite.com"
+            maxlength="500"
+            required
+            aria-describedby="claim-website-help"
+          />
+          <p class="claim-note" id="claim-website-help">{copy.websiteHelp}</p>
+          <button class="claim-primary" type="submit"
+            ><span data-lookup-label>{copy.lookupAction}</span><ArrowRight
+              size={18}
+              aria-hidden="true"
+            /></button
+          >
+        </form>
+      </section>
+      <section data-claim-panel="winner" aria-label="Your winner resources" hidden>
+        <div class="claim-winner">
+          <div>
+            <a data-winner-site target="_blank" rel="noopener noreferrer"></a><p data-winner-award>
+            </p>
+            <p data-developer-name class="claim-developer-name" hidden></p>
+          </div>
+          <button type="button" class="claim-text-button" data-change-website
+            >{copy.changeWebsite}</button
+          >
+        </div>
+        <fieldset class="claim-recipient" data-recipient-options hidden>
+          <legend class="claim-sr-only">{copy.roleLegend}</legend>
+          <label
+            ><input type="radio" name="recipient" value="business" checked /><span
+              >{copy.businessLabel}</span
+            ></label
+          >
+          <label
+            ><input type="radio" name="recipient" value="developer" /><span
+              >{copy.developerLabel}</span
+            ></label
+          >
+        </fieldset>
+        <div class="claim-badges">
+          {
+            variants.map((badge) => (
+              <article class="claim-card" data-badge={badge.id} data-design={badge.design}>
+                <div class="claim-card-preview">
+                  <ManagedPicture image={badge.preview} class="claim-badge-image" />
+                </div>
+                <div class="claim-card-footer">
+                  <div>
+                    <>
+                      <h2>{badge.name}</h2>
+                      <p>{badge.tone === 'light' ? 'Light' : 'Dark'}</p>
+                    </>
+                  </div>
+                  <button
+                    class="claim-primary"
+                    type="button"
+                    data-download={badge.id}
+                    aria-label={`${copy.downloadAction} ${badge.name.toLowerCase()}, ${badge.tone}`}
+                  >
+                    <>
+                      <Download size={17} aria-hidden="true" />
+                      <span>{copy.downloadAction}</span>
+                    </>
+                  </button>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+        <p class="claim-usage">{copy.usageNote}</p>
+      </section>
+      <section
+        data-claim-panel="not-found"
+        class="claim-not-found"
+        hidden
+        aria-labelledby="claim-not-found-title"
+      >
+        <h2 id="claim-not-found-title">{copy.notFoundTitle}</h2>
+        <p>{copy.notFoundMessage}</p>
+        <button type="button" class="claim-primary" data-change-website
+          >{copy.retryAction}<ArrowRight size={18} aria-hidden="true" /></button
+        >
+      </section>
+      <p class="claim-help">
+        {copy.helpText}
+        <a href={copy.supportWhatsApp} target="_blank" rel="noopener noreferrer"
+          >{copy.supportWhatsAppLabel}</a
+        >
+      </p>
+      <noscript><p class="claim-error">{copy.noScriptMessage}</p></noscript>
+    </main>
+    <footer class="claim-footer">
+      <span>{copy.footerLabel}</span><a href={`mailto:${copy.supportEmail}`}>{copy.supportEmail}</a>
+    </footer>
+    <dialog
+      class="claim-dialog"
+      data-download-dialog
+      aria-labelledby="claim-download-title"
+      aria-describedby="claim-download-subtitle"
+    >
+      <div class="claim-dialog-heading">
+        <div>
+          <h2 id="claim-download-title" tabindex="-1">{copy.modalTitle}</h2><p
+            id="claim-download-subtitle"
+            data-download-subtitle
+          >
+          </p>
+        </div>
+        <button type="button" class="claim-close" data-close-dialog aria-label={copy.closeLabel}
+          ><X size={22} aria-hidden="true" /></button
+        >
+      </div>
+      <div class="claim-dialog-preview">
+        <ManagedPicture image={variants[0].preview} class="claim-dialog-image" />
+      </div>
+      <fieldset class="claim-size-options">
+        <legend>{copy.sizeLabel}</legend>
+        {
+          (['small', 'medium', 'large'] as const).map((size) => (
+            <label class="claim-size">
+              <>
+                <input type="radio" name="badge-size" value={size} checked={size === 'medium'} />
+                <span>
+                  <>
+                    <strong>{copy.sizeNames[size]}</strong>
+                    <small data-size-dimensions={size} />
+                  </>
+                </span>
+              </>
+            </label>
+          ))
+        }
+      </fieldset>
+      <fieldset class="claim-format-options">
+        <legend>{copy.formatLabel}</legend>
+        <label><input type="radio" name="badge-format" value="png" checked /><span>PNG</span></label
+        >
+        <label><input type="radio" name="badge-format" value="webp" /><span>WebP</span></label>
+      </fieldset>
+      <a class="claim-primary claim-download-file" data-download-file download
+        ><Download size={18} aria-hidden="true" /><span data-download-file-label>Download PNG</span
+        ></a
+      >
+      <p class="claim-dialog-note">{copy.usageNote}</p>
+    </dialog>
+    <script
+      is:inline
+      type="application/json"
+      data-claim-copy
+      set:html={JSON.stringify(copy).replace(/</g, '\u003c')}
+    />
+  </div>
+  <script>
+    import '../scripts/claim';
+  </script>
+</BaseLayout>

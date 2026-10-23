@@ -6,7 +6,7 @@ export const GET: APIRoute = ({ site }) => {
   const origin = site ?? new URL('https://bestwebsiteaward.com');
 
   return new Response(
-    `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /_image\nDisallow: /_server-islands/\n\nSitemap: ${new URL('/sitemap.xml', origin)}\n`,
+    `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /_image\nDisallow: /_server-islands/\nDisallow: /winner-resources/\n\nSitemap: ${new URL('/sitemap.xml', origin)}\n`,
     {
       headers: {
         'Content-Type': 'text/plain; charset=utf-8',

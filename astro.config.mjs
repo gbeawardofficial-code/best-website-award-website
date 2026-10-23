@@ -15,7 +15,9 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter: (page) =>
-        !['/nomination-status', '/accept'].includes(new URL(page).pathname.replace(/\/$/, '')),
+        !['/nomination-status', '/accept', '/claim'].includes(
+          new URL(page).pathname.replace(/\/$/, '')
+        ),
       namespaces: {
         news: false,
         video: false,

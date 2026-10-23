@@ -63,14 +63,15 @@ if (JSON.stringify(config.cache) !== JSON.stringify(['.cache/astro/**'])) {
 
 const functionRoutes = config.routes.filter((route) => route.dest === '_render');
 if (
-  functionRoutes.length !== 4 ||
+  functionRoutes.length !== 5 ||
   !functionRoutes.some((route) => route.src === '^/api/contact$') ||
   !functionRoutes.some((route) => route.src === '^/api/meta$') ||
   !functionRoutes.some((route) => route.src.startsWith('^/api/nomination/')) ||
-  !functionRoutes.some((route) => route.src.startsWith('^/api/participation/'))
+  !functionRoutes.some((route) => route.src.startsWith('^/api/participation/')) ||
+  !functionRoutes.some((route) => route.src === '^/api/claim/lookup$')
 ) {
   fail(
-    `expected only contact, meta, nomination and participation APIs to map to _render, found ${JSON.stringify(functionRoutes)}`
+    `expected only contact, meta, nomination, participation and winner lookup APIs to map to _render, found ${JSON.stringify(functionRoutes)}`
   );
 }
 if (!(await exists(resolve(staticRoot, 'nomination-status/index.html'))))
@@ -78,6 +79,9 @@ if (!(await exists(resolve(staticRoot, 'nomination-status/index.html'))))
 
 if (!(await exists(resolve(staticRoot, 'accept/index.html'))))
   fail('participation shell must be static');
+
+if (!(await exists(resolve(staticRoot, 'claim/index.html'))))
+  fail('winner resources shell must be static');
 
 for (const forbiddenRoute of ['/_image', '/_server-islands', '/sitemap.xml']) {
   if (config.routes.some((route) => route.src?.includes(forbiddenRoute.slice(1)))) {

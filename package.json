@@ -12,6 +12,8 @@
   },
   "scripts": {
     "assets:brand": "node scripts/generate-brand-assets.mjs",
+    "assets:winners": "node scripts/generate-winner-badges.mjs",
+    "winners:seed": "node --env-file=.env scripts/seed-winner-resources.mjs",
     "payments:migrate": "node --env-file=.env scripts/migrate-payments.mjs",
     "payments:reconcile": "node --env-file=.env scripts/reconcile-payments.mjs",
     "dev": "astro dev",

@@ -195,6 +195,8 @@ Before deploying, apply migration `004_participation_payments.sql` using `npm ru
 
 ## Content and media
 
+The 2026 winner badge resource page is available at `/claim`. See [Winner resources](./docs/winner-resources.md) for the approved cohort, optional developer recognition, database seed and static badge exports.
+
 Public components do not import CMS or database records directly. They consume typed contracts from [`src/lib/content/types.ts`](./src/lib/content/types.ts) through the content-source modules in [`src/lib/content/`](./src/lib/content/).
 
 Current content is versioned in [`src/data/`](./src/data/). When the separate admin application is connected, the source adapters can be replaced with validated Neon-backed implementations while keeping the component contract stable.

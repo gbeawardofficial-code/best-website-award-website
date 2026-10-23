@@ -253,6 +253,10 @@ if (!getMetaContent(participation, 'name="robots"')?.startsWith('noindex'))
 if (participation.includes('data-consent')) fail('participation must not load analytics');
 if (participation.includes('Local preview') || participation.includes('data-demo="true"'))
   fail('local demo must never enter production HTML');
+const claim = await readRoute('/claim');
+if (!getMetaContent(claim, 'name="robots"')?.startsWith('noindex'))
+  fail('winner resource claim must be noindex');
+if (claim.includes('data-consent')) fail('winner resource claim must not load analytics');
 const descriptions = pageDocuments.map((page) => page.description);
 if (new Set(titles).size !== titles.length) fail('indexable pages contain duplicate titles');
 if (new Set(descriptions).size !== descriptions.length) {
