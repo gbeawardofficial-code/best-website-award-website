@@ -40,11 +40,14 @@ function image(node: HTMLImageElement, preview: WinnerBadge['preview']) {
   node.height = preview.height;
   node.src = preview.src;
   const expected = node.src;
-  void node.decode().then(() => {
-    if (node.src === expected) node.classList.remove('claim-image-pending');
-  }).catch(() => {
-    // Never leave a previous recipient's image visible after a failed request.
-  });
+  void node
+    .decode()
+    .then(() => {
+      if (node.src === expected) node.classList.remove('claim-image-pending');
+    })
+    .catch(() => {
+      // Never leave a previous recipient's image visible after a failed request.
+    });
 }
 function renderBadges() {
   if (!winner) return;
