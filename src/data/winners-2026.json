@@ -1,30 +1,99 @@
 [
-  { "website": "https://accronautobot.com", "award": "Best Software Solutions Website" },
+  {
+    "website": "https://accronautobot.com",
+    "award": "Best Software Solutions Website"
+  },
   {
     "website": "https://ceylonenvoy.com/",
     "award": "Best Luxury Travel Website",
     "developer": "Augmara"
   },
-  { "website": "http://www.angelcurveglobal.com/", "award": "Best Beauty Studio Website" },
-  { "website": "http://www.blackrosebeautyglobal.com/", "award": "Best Cosmetology Website" },
-  { "website": "https://resume-x.app", "award": "Best AI Resume Builder Website" },
-  { "website": "https://www.imperialteasgroup.com", "award": "Best Tea Exporter Website" },
-  { "website": "https://www.rs.lk", "award": "Best Steel Manufacturing Website" },
-  { "website": "https://linzzotopup.com/", "award": "Best Gaming Top-up Website" },
-  { "website": "https://sincap.cc/", "award": "Best Sinhala Content Creation Platform" },
-  { "website": "https://www.ognos.lk/", "award": "Best Chemical Manufacturing Website" },
-  { "website": "https://kikibeauty.lk/", "award": "Best Beauty Retail E-commerce Website" },
-  { "website": "https://www.captureeye.com/", "award": "Best Video Production Website" },
-  { "website": "https://www.percs.lk/", "award": "Best Enterprise Software Website" },
-  { "website": "https://www.tharinduhettiarachchi.com/", "award": "Best Tax Consultancy Website" },
-  { "website": "https://zonova.lk", "award": "Best Online Gifting Website" },
-  { "website": "https://hobbymart.lk", "award": "Best Hobby Retail E-commerce Website" },
+  {
+    "website": "http://www.angelcurveglobal.com/",
+    "award": "Best Beauty Studio Website"
+  },
+  {
+    "website": "http://www.blackrosebeautyglobal.com/",
+    "award": "Best Cosmetology Website"
+  },
+  {
+    "website": "https://resume-x.app",
+    "award": "Best AI Resume Builder Website"
+  },
+  {
+    "website": "https://www.imperialteasgroup.com",
+    "award": "Best Tea Exporter Website"
+  },
+  {
+    "website": "https://www.rs.lk",
+    "award": "Best Steel Manufacturing Website"
+  },
+  {
+    "website": "https://linzzotopup.com/",
+    "award": "Best Gaming Top-up Website"
+  },
+  {
+    "website": "https://sincap.cc/",
+    "award": "Best Sinhala Content Creation Platform"
+  },
+  {
+    "website": "https://www.ognos.lk/",
+    "award": "Best Chemical Manufacturing Website"
+  },
+  {
+    "website": "https://kikibeauty.lk/",
+    "award": "Best Beauty Retail E-commerce Website"
+  },
+  {
+    "website": "https://www.captureeye.com/",
+    "award": "Best Video Production Website"
+  },
+  {
+    "website": "https://www.percs.lk/",
+    "award": "Best Enterprise Software Website"
+  },
+  {
+    "website": "https://www.tharinduhettiarachchi.com/",
+    "award": "Best Tax Consultancy Website"
+  },
+  {
+    "website": "https://zonova.lk",
+    "award": "Best Online Gifting Website"
+  },
+  {
+    "website": "https://hobbymart.lk",
+    "award": "Best Hobby Retail E-commerce Website"
+  },
   {
     "website": "https://monarch-jewellers.com/",
     "award": "Best Jewellery Retail Website",
     "developer": "DEGITALDEVS"
   },
-  { "website": "https://sayora.lk/", "award": "Best Wellness Centre Website" },
-  { "website": "https://batteryhouse.lk", "award": "Best Battery Retail E-commerce Website" },
-  { "website": "https://spiceswijay.com/", "award": "Best Food Manufacturing Website" }
+  {
+    "website": "https://sayora.lk/",
+    "award": "Best Wellness Centre Website"
+  },
+  {
+    "website": "https://batteryhouse.lk",
+    "award": "Best Battery Retail E-commerce Website"
+  },
+  {
+    "website": "https://spiceswijay.com/",
+    "award": "Best Food Manufacturing Website"
+  },
+  {
+    "website": "http://evergreen.lk/",
+    "award": "Best Lighting Solutions Importer Website",
+    "developer": "Codezela Technologies"
+  },
+  {
+    "website": "http://ceylonecospices.com/",
+    "award": "Best Spice Exporter Website",
+    "developer": "Codezela Technologies"
+  },
+  {
+    "website": "http://digitalhouse.lk/",
+    "award": "Best Technology Distributer Website",
+    "developer": "Codezela Technologies"
+  }
 ]

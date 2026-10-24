@@ -1,7 +1,7 @@
 {
   "year": 2026,
-  "version": "b85ed2b19de8",
-  "prefix": "/winner-resources/2026/b85ed2b19de8",
+  "version": "fcf1bb6e1ceb",
+  "prefix": "/winner-resources/2026/fcf1bb6e1ceb",
   "winners": {
     "accronautobot.com": {
       "website": "accronautobot.com",
@@ -3330,6 +3330,903 @@
                   "height": 455,
                   "png": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-dark-1902w.png",
                   "webp": "/winner-resources/2026/b85ed2b19de8/spiceswijay.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "evergreen.lk": {
+      "website": "evergreen.lk",
+      "websiteUrl": "http://evergreen.lk/",
+      "award": "Best Lighting Solutions Importer Website",
+      "developer": "Codezela Technologies",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-light-480w.webp",
+                "alt": "Best Lighting Solutions Importer Website, evergreen.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-dark-480w.webp",
+                "alt": "Best Lighting Solutions Importer Website, evergreen.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-light-1200w.webp",
+                "alt": "Best Lighting Solutions Importer Website, evergreen.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-dark-1200w.webp",
+                "alt": "Best Lighting Solutions Importer Website, evergreen.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "developer",
+          "name": "Codezela Technologies",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-light-480w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Lighting Solutions Importer Website, evergreen.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-light-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-light-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-light-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-dark-480w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Lighting Solutions Importer Website, evergreen.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-light-1200w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Lighting Solutions Importer Website, evergreen.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-light-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-dark-1200w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Lighting Solutions Importer Website, evergreen.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/evergreen.lk/developer/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ceylonecospices.com": {
+      "website": "ceylonecospices.com",
+      "websiteUrl": "http://ceylonecospices.com/",
+      "award": "Best Spice Exporter Website",
+      "developer": "Codezela Technologies",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-light-480w.webp",
+                "alt": "Best Spice Exporter Website, ceylonecospices.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-dark-480w.webp",
+                "alt": "Best Spice Exporter Website, ceylonecospices.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-light-1200w.webp",
+                "alt": "Best Spice Exporter Website, ceylonecospices.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-dark-1200w.webp",
+                "alt": "Best Spice Exporter Website, ceylonecospices.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "developer",
+          "name": "Codezela Technologies",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-light-480w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Spice Exporter Website, ceylonecospices.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-light-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-light-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-light-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-dark-480w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Spice Exporter Website, ceylonecospices.com, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-light-1200w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Spice Exporter Website, ceylonecospices.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-light-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-dark-1200w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Spice Exporter Website, ceylonecospices.com, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/ceylonecospices.com/developer/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "digitalhouse.lk": {
+      "website": "digitalhouse.lk",
+      "websiteUrl": "http://digitalhouse.lk/",
+      "award": "Best Technology Distributer Website",
+      "developer": "Codezela Technologies",
+      "roles": [
+        {
+          "id": "business",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-light-480w.webp",
+                "alt": "Best Technology Distributer Website, digitalhouse.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-light-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-light-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-light-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-dark-480w.webp",
+                "alt": "Best Technology Distributer Website, digitalhouse.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-light-1200w.webp",
+                "alt": "Best Technology Distributer Website, digitalhouse.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-light-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-dark-1200w.webp",
+                "alt": "Best Technology Distributer Website, digitalhouse.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/business/C-dark-1902w.webp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "developer",
+          "name": "Codezela Technologies",
+          "badges": [
+            {
+              "id": "A-light",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-light-480w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Technology Distributer Website, digitalhouse.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-light-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-light-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-light-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-light-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-light-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-light-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "A-dark",
+              "design": "A",
+              "name": "Signature crest",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-dark-480w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Technology Distributer Website, digitalhouse.lk, Best Website Awards 2026 winner",
+                "width": 480,
+                "height": 603
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 240,
+                  "height": 301,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-dark-240w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-dark-240w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 480,
+                  "height": 603,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-dark-480w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-dark-480w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 980,
+                  "height": 1231,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-dark-980w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/A-dark-980w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-light",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "light",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-light-1200w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Technology Distributer Website, digitalhouse.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-light-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-light-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-light-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-light-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-light-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-light-1902w.webp"
+                }
+              ]
+            },
+            {
+              "id": "C-dark",
+              "design": "C",
+              "name": "Architectural plaque",
+              "tone": "dark",
+              "preview": {
+                "src": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-dark-1200w.webp",
+                "alt": "Codezela Technologies developer recognition, Best Technology Distributer Website, digitalhouse.lk, Best Website Awards 2026 winner",
+                "width": 1200,
+                "height": 287
+              },
+              "sizes": [
+                {
+                  "id": "small",
+                  "width": 600,
+                  "height": 144,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-dark-600w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-dark-600w.webp"
+                },
+                {
+                  "id": "medium",
+                  "width": 1200,
+                  "height": 287,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-dark-1200w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-dark-1200w.webp"
+                },
+                {
+                  "id": "large",
+                  "width": 1902,
+                  "height": 455,
+                  "png": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-dark-1902w.png",
+                  "webp": "/winner-resources/2026/fcf1bb6e1ceb/digitalhouse.lk/developer/C-dark-1902w.webp"
                 }
               ]
             }

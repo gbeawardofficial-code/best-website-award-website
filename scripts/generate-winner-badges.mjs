@@ -9,6 +9,13 @@ const root = resolve(import.meta.dirname, '..');
 const input = join(root, 'scripts/assets/winner-badges');
 const cohortFile = await readFile(join(root, 'src/data/winners-2026.json'));
 const cohort = JSON.parse(cohortFile.toString());
+const requested = process.argv.slice(2);
+const websiteHost = (value) => new URL(value).hostname.toLowerCase().replace(/^www\./, '');
+if (requested.some((website) => !cohort.some((r) => websiteHost(r.website) === website)))
+  throw new Error('Only approved websites can be exported.');
+const selected = requested.length
+  ? cohort.filter((r) => requested.includes(websiteHost(r.website)))
+  : cohort;
 const font = await readFile(
   join(
     root,
@@ -30,7 +37,10 @@ for (const buffer of [...Object.values(logos), ...Object.values(frames)]) hash.u
 const version = hash.digest('hex').slice(0, 12);
 const prefix = `/winner-resources/2026/${version}`;
 const output = join(root, 'public', prefix);
-const manifest = { year: 2026, version, prefix, winners: {} };
+const previous = requested.length
+  ? JSON.parse(await readFile(join(root, 'src/data/badge-assets-2026.json'), 'utf8'))
+  : undefined;
+const manifest = { year: 2026, version, prefix, winners: { ...previous?.winners } };
 const host = (value) => new URL(value).hostname.toLowerCase().replace(/^www\./, '');
 const dataUri = (data, type) => `data:${type};base64,${data.toString('base64')}`;
 const escape = (s) =>
@@ -102,7 +112,7 @@ const browser = await chromium.launch({ headless: true });
 let exports = 0;
 try {
   const page = await browser.newPage();
-  for (const record of cohort) {
+  for (const record of selected) {
     const website = host(record.website);
     const entry = {
       website,
@@ -257,8 +267,14 @@ await writeFile(
 console.log(
   JSON.stringify({
     winners: cohort.length,
-    badgeSets: 22,
-    variants: 88,
+    badgeSets: Object.values(manifest.winners).reduce(
+      (sum, winner) => sum + winner.roles.length,
+      0
+    ),
+    variants: Object.values(manifest.winners).reduce(
+      (sum, winner) => sum + winner.roles.length * 4,
+      0
+    ),
     exports,
     version,
     browserClosed: true

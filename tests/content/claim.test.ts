@@ -16,10 +16,10 @@ const record = (index: number): WinnerResourceRecord => ({
   active: true
 });
 describe('approved winner resources', () => {
-  it('provides all 20 exact approved URLs and titles with no duplicate domains', () => {
-    expect(records).toHaveLength(20);
-    expect(new Set(records.map((r) => normaliseWebsite(r.website))).size).toBe(20);
-    expect(Object.keys(manifest.winners)).toHaveLength(20);
+  it('provides all 23 exact approved URLs and titles with no duplicate domains', () => {
+    expect(records).toHaveLength(23);
+    expect(new Set(records.map((r) => normaliseWebsite(r.website))).size).toBe(23);
+    expect(Object.keys(manifest.winners)).toHaveLength(23);
     for (let i = 0; i < records.length; i++) {
       expect(resourcesForWinner(record(i))).toMatchObject({
         website: record(i).website_host,
@@ -28,13 +28,16 @@ describe('approved winner resources', () => {
       });
     }
   });
-  it('offers developer badges only for the two explicitly approved developers', () => {
+  it('offers developer badges only for explicitly approved websites and developers', () => {
     const developers = records
       .map((_, i) => resourcesForWinner(record(i))!)
       .filter((r) => r.developer);
     expect(developers.map((r) => [r.website, r.developer])).toEqual([
       ['ceylonenvoy.com', 'Augmara'],
-      ['monarch-jewellers.com', 'DEGITALDEVS']
+      ['monarch-jewellers.com', 'DEGITALDEVS'],
+      ['evergreen.lk', 'Codezela Technologies'],
+      ['ceylonecospices.com', 'Codezela Technologies'],
+      ['digitalhouse.lk', 'Codezela Technologies']
     ]);
     for (let i = 0; i < records.length; i++)
       expect(resourcesForWinner(record(i))!.roles).toHaveLength(records[i].developer ? 2 : 1);
@@ -64,15 +67,13 @@ describe('approved winner resources', () => {
           expect(badge.preview.alt).toContain(records[i].award);
           for (const size of badge.sizes)
             for (const format of ['png', 'webp'] as const) {
-              expect(size[format]).toMatch(
-                new RegExp(`^/winner-resources/2026/${manifest.version}/`)
-              );
+              expect(size[format]).toMatch(/^\/winner-resources\/2026\/[a-f0-9]{12}\//);
               await access(resolve('public', `.${size[format]}`));
               count++;
             }
         }
       }
-    expect(count).toBe(528);
+    expect(count).toBe(672);
     expect((await getClaimContent()).variants).toHaveLength(4);
   });
   it('keeps the claim page non-indexable and outside the public sitemap integration', async () => {

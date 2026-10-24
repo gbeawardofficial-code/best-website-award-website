@@ -7,8 +7,14 @@ const records = JSON.parse(
   await readFile(new URL('../src/data/winners-2026.json', import.meta.url), 'utf8')
 );
 const host = (value) => new URL(value).hostname.toLowerCase().replace(/^www\./, '');
-if (records.length !== 20 || new Set(records.map((r) => host(r.website))).size !== 20)
-  throw new Error('Expected the 20 distinct, approved 2026 winner websites.');
+if (!records.length || new Set(records.map((r) => host(r.website))).size !== records.length)
+  throw new Error('Expected distinct, approved 2026 winner websites.');
+const requested = process.argv.slice(2);
+if (requested.some((website) => !records.some((r) => host(r.website) === website)))
+  throw new Error('Only approved websites can be seeded.');
+const selected = requested.length
+  ? records.filter((r) => requested.includes(host(r.website)))
+  : records;
 const sql = neon(process.env.DATABASE_URL, {
   fetchOptions: { signal: AbortSignal.timeout(15_000) }
 });
@@ -22,7 +28,7 @@ await sql.transaction([
     .map((s) => s.trim())
     .filter(Boolean)
     .map((s) => sql.query(s)),
-  ...records.map(
+  ...selected.map(
     (r) => sql`INSERT INTO bwa.winner_resources
     (programme_year, website_host, website_url, award_title, developer_name)
     VALUES (2026, ${host(r.website)}, ${r.website}, ${r.award}, ${r.developer || null})
